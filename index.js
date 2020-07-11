@@ -87,7 +87,7 @@ function whileLoading(){
 		$("#continue").text("please enable images");
 	}
 }
-window.onload = window.setTimeout(whileLoading,1000);
+window.onload = function(){window.setTimeout(whileLoading,1000)};
 
 var menuCounter = 0;
 function afterLoading(){
