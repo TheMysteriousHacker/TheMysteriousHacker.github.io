@@ -301,7 +301,7 @@ hr{
 	#tableedit{margin-top:15px;margin-bottom:15px}
 	.ttext{padding: 1px;}
 	.menu{font-size:12px;line-height:14px}
-	.ttitle2{font-size:25px;padding:0px 10px;line-height:35px;font-weight:bold;color:#CF40FF}
+	.ttitle2{font-size:24px;padding:0px 10px;line-height:30px;font-weight:bold;color:#CF40FF}
 }
 @media screen and (max-width:1023px){
 	.footertd2{font-size:11px;line-height: 15px;padding-left:10px}
