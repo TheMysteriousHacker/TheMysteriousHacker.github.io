@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<HTML lang="en">
+<!--head~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<HEAD>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<TITLE>Proof That [d/dx]sin(x) = cos(x)</TITLE>
+</HEAD>
+<!--body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<BODY id="body2">
+<header id="mainheader2" style="background-color:white"><h1>Proof That [d/dx]sin(x) = cos(x)</h1></header>
+<p class="pmain">For this proof, it must be clear to you that [lim<sub>x-&gt;0</sub> sin(x)/x = 1], and that
+[lim<sub>x-&gt;0</sub> (cos(x) - 1)/x = 0]. You must also know how to expand sin(a + b), if you don't, then
+<a href="../../trigonometry/cos1/cos2.html" target="_blank" style="color:blue">click here</a>. By definition, the
+derivative of sin(x) would be:</p>
+<img src="s1.png" class="displayimg">
+<p class="pmain">If we expand sin(x + h):</p>
+<img src="s2.png" class="displayimg">
+<p class="pmain">If we keep simplifying it further:</p>
+<img src="s3.png" class="displayimg">
+<p class="pmain">We know that [lim<sub>h-&gt;0</sub> (cos(h) - 1)/h = 0], [lim<sub>h-&gt;0</sub> sin(x) = sin(x)]
+and [lim<sub>x-&gt;0</sub> sin(x)/x = 1], so:</p>
+<img src="s4.png" class="displayimg">
+<p class="pmain">Hence we have proved that the derivative of sin(x) is cos(x).</p>
+<hr>
+<script src="../../main.js"></script>
+</BODY>
+</HTML>

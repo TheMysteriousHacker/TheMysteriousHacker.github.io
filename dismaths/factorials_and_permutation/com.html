@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<HTML lang="en">
+<!--head~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<HEAD>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<TITLE>Deriving The Formula For Combinations</TITLE>
+</HEAD>
+<!--body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<BODY id="body2">
+<header id="mainheader2" style="background-color:white"><h1>Deriving The Formula For Combinations</h1></header>
+<p class="pmain">Suppose out of these four letters I want to arrange three of them:</p>
+<img class="displayimg" src="1.png">
+<p class="pmain">Using <span style="color:purple">permutations</span>, we know that there are <span
+style="color:purple">P(<span
+style="color:#FF6600">4</span>,<span style="color:#FF9933">3</span>)</span> (= 24) ways to do it:</p>
+<img class="displayimg" src="2.png">
+<p class="pmain">Each arrangement like [A, B, C] or [B, A, C] is a different <span
+style="color:purple">permutations</span>, but what if order didn't matter? What if we didn't care whether its [A,
+B, C] or [B, A ,C]? This is where <span style="color:navy">combinations</span> come in. <span
+style="color:navy">Combinations</span> tell you how many unique arrangements you can have, by unique I mean the
+letters in each arrangement cannot be the same. For example [A, B, C] and [D, A , B] are two different <span
+style="color:navy">combinations</span>, but [A, B, C] and [C, B, A] are the same in terms of <span
+style="color:navy">combinations</span>. In our previous example, there is only 4 <span
+style="color:navy">combinations</span>:</p>
+<img class="displayimg" src="3.png">
+<p class="pmain">There are 3! ways of arranging three letters, and if you look at the above table closely, you
+will notice that the reason it has 6 rows is because 3! = 6. For example, in the last row, [C, B, A] is one of
+the arrangements, but since there are 3! ways of arranging [C, B, A], you would need 6 rows to present all of
+those arrangements, the same goes for [D, B, A], [C, D, A] and [C, D, B]. The notation of <span
+style="color:purple">permutations</span> is this [<span style="color:purple">P(<span
+style="color:#FF6600">n</span>,<span style="color:#FF9933">k</span>)</span>] and this [<sub
+style="color:#FF6600">n</sub><span style="color:purple">P</span><sub style="color:#FF9933">k</sub>]. Similarly for
+<span style="color:navy">combinations</span>, the notation is like this [<span style="color:navy">C(<span
+style="color:#FF6600">n</span>,<span style="color:#FF9933">k</span>)</span>] and this [<sub
+style="color:#FF6600">n</sub><span style="color:navy">C</span><sub style="color:#FF9933">k</sub>]. Now using the
+above letters, lets try to find <sub style="color:#FF6600">4</sub><span style="color:navy">C</span><sub
+style="color:#FF9933">2</sub>:</p>
+<img class="displayimg" src="4co2.png">
+<p class="pmain">Out of four letters, if we want to arrange them in groups of twos, then there are (<sub
+style="color:#FF6600">4</sub><span style="color:navy">C</span><sub style="color:#FF9933">2</sub> =) 6 ways to do
+it (provided that the order doesn't matter). Since there are 2! ways to arrange two letters, then that must mean
+[<sub style="color:#FF6600">4</sub><span style="color:purple">P</span><sub style="color:#FF9933">2</sub> = <sub
+style="color:#FF6600">4</sub><span style="color:navy">C</span><sub style="color:#FF9933">2</sub> * <span
+style="color:#FF9933">2</span>!]:</p>
+<img class="displayimg" src="4p2.png" alt="Images in this website is important, and there is suppose to be an image here.">
+<p class="pmain">Using the above examples, we can deduce that [<sub style="color:#FF6600">n</sub><span
+style="color:navy">C</span><sub style="color:#FF9933">k</sub> * <span style="color:#FF9933">k</span>! = <sub
+style="color:#FF6600">n</sub><span style="color:purple">P</span><sub style="color:#FF9933">k</sub>], because
+[(<span style="color:navy">the number of groups with unique elements</span>) * (<span style="color:#FF9933">number
+of ways you can arrange the elements in one group</span>) = (<span style="color:purple">number of groups where
+each group has a different arrangement whether the elements are repeated to not</span>)]. To understand this
+better, you should use your own examples. We can also use the above statement to derive the formula for
+combinations:</p>
+<img class="displayimg" src="cfor.png">
+<hr>
+<script src="../../main.js"></script>
+</BODY>
+</HTML>

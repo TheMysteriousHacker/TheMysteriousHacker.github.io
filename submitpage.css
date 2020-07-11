@@ -1,0 +1,42 @@
+﻿body{
+	background-color:#FFF2CC;
+	margin:0px
+}
+
+input{
+	width:200px;
+	margin-left:20px
+}
+#divleft{
+	width:300px;height:280px;float:left;display:block
+}
+#divright{
+	width:300px;height:280px;float:right;display:block
+}
+h1{
+	min-width:600px;
+	line-height:60px;
+	background-color:#FF9933;
+	font-family:Arial;
+	font-size:40px;
+	letter-spacing:2px;
+	color:red;
+	text-align:center
+}
+#form{
+	font-family:'Comic Sans MS';
+	text-align:left;
+	width:600px
+}
+textarea{
+	height:180px;
+	width:98%;
+	margin:0px;
+	resize:none
+}
+@media (max-device-width:1023px){
+	#divleft{float:none;margin-left:20px;height:auto}
+	#divright{float:none;margin-left:20px;margin-right:20px}
+	h1{min-width:340px}
+	form{width:340px}
+	textarea{margin-left:20px;width:80%}}

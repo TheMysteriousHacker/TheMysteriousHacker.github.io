@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<HTML lang="en">
+<!--head~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<HEAD>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<TITLE>Why The Binomial Theorem Works</TITLE>
+</HEAD>
+<!--body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<BODY id="body2">
+<header id="mainheader2" style="background-color:white"><h1>Why The Binomial Theorem Works</h1></header>
+<p class="pmain">Lets say we have four letters (X, Y, B, and C), and lets say we have four boxes:</p>
+<img class="displayimg" src="1.png">
+
+<p class="pmain">If I want to put these four letters into these boxes, how many can I arrange these letters?</p>
+
+<img class="displayimg" src="2.png">
+
+<p class="pmain">In the first box, I can put either, X, Y, or C, so I have a total of 4 options:</p>
+
+<img class="displayimg" src="3.png">
+
+<p class="pmain">After I have chosen a letter for the first box, then I have a total of 3 options for the second box. For example, if I choose C for the first box, then for the second box, I can choose, X, Y, or B:</p>
+
+<img class="displayimg" src="4.png">
+
+<p class="pmain">In other words, if I have four letters, then there are [4 * 3] ways I can get the first two letters: XY, CX, BY, BX, XB, YX, and so on.</p>
+
+<img class="displayimg" src="5.png">
+
+<p class="pmain">Hence we have proven that [<sub style="color:red">r</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c-1</sub> + <sub style="color:red">r</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c</sub> = <sub style="color:red">r+1</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c</sub>]. Since we already know that [<sub style="color:red">r</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c</sub>] gives the numbers in the Pascal's triangle for the
+first few <span style="color:red">rows</span>, then by using the equation [<sub style="color:red">r</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c-1</sub> + <sub style="color:red">r</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c</sub> = <sub style="color:red">r+1</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c</sub>], we know that [<sub style="color:red">r</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c</sub>] will also do the same for other <span
+style="color:red">rows</span> as well.</p>
+
+<hr>
+<script src="../../main.js"></script>
+</BODY>
+</HTML>

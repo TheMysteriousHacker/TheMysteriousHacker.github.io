@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<HTML lang="en">
+<!--head~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<HEAD>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<TITLE>Proof Of The Trapezium Rule</TITLE>
+</HEAD>
+<!--body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<BODY id="body2">
+<header id="mainheader2" style="background-color:white"><h1>Proof Of The Trapezium Rule</h1></header>
+<p class="pmain">Before learning about the trapezium rule, you need to know the formula for the area of a trapezium, if
+you don't, then <a href="../../geometry/area_of_trapezium/area_trapezium.html" style="color:blue" target="_blank">
+click here</a>. Now let's start with this graph of [<span style="color:#9900CC">y = f(<span style="color:
+red">x</span>)</span>]:</p>
+<img class="displayimg" src="graph.png">
+<p class="pmain">Lets say we need to find the approximate area between <span style="color:red">a</span> and <span
+style="color:red">b</span> so we divided it into <span style="color:fuchsia">n</span> equal strips, where each strip
+will be of width <span style="color:orange">h</span>:</p>
+<img class="displayimg" src="lol.png">
+<p class="pmain">Next we label the value of <span style="color:#9900CC">y</span> for each value of<span style="color:red">
+x</span>; the first one should be called <span style="color:#9900CC">y<sub>0</sub></span>, and the last one should be
+call <span style="color:#9900CC">y<sub>n</sub></span>:</p>
+<img class="displayimg" src="y.png">
+<p class="pmain">We can take one of the strips and imagine it as a trapezium:</p>
+<img class="displayimg" src="trapezium.png">
+<p class="pmain">Finding the area of this trapezium will give us an approximate value of the actual area between
+<span style="color:red">a</span> and [<span style="color:red">a</span> + <span style="color:orange">h</span>]. We
+know that the area of this trapezium is [1/2 * <span style="color:orange">h</span> * (<span
+style="color:#9900CC">y<sub>0</sub></span> + <span style="color:#9900CC">y<sub>1</sub></span>)], then that means the
+sum of the area of all the trapeziums would be:</p>
+<img class="displayimg" src="sum.png">
+<p class="pmain">We can take the <span style="color:orange">h</span> and 1/2 out:</p>
+<img class="displayimg" src="area.png">
+<p class="pmain">All the <span style="color:#9900CC">y</span> values, except for the first one and the last one are
+repeated twice, so that means we can simplify even further:</p>
+<img class="displayimg" src="trule.png">
+<hr>
+<script src="../../main.js"></script>
+</BODY>
+</HTML>

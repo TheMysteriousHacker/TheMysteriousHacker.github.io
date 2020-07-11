@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<HTML lang="en">
+<!--head~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<HEAD>
+<TITLE>Proof Of The Cosine Rule</TITLE>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</HEAD>
+<!--body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<BODY id="body2">
+<header id="mainheader2" style="background-color:white"><h1>Proof Of The Cosine Rule</h1></header>
+<p class="pmain">Here is a circle with <span style="color:#B3A2C7">radius a</span>, <span style="color:red">angle theta</span> and the centre with coordinates (0,0):</p>
+<img class="displayimg" src="first_circle.png">
+<p class="pmain">Here is a triangle with <span style="color:#B3A2C7">sides a, b and c</span>:</p>
+<img class="displayimg" src="second_circle.png">
+<p class="pmain">The coordinates of the point where <span style="color:#B3A2C7">line a</span> touches the <span style="color:#0066FF">circle</span>, can be written as:</p>
+<img class="displayimg" src="coordinate.png">
+<p class="pmain">Now suppose we make a right angled triangle, like this:</p>
+<img class="displayimg" src="right.png">
+<p class="pmain">This right-angled triangle has sides <span style="color:#B3A2C7">c</span>, <span style="color:#B3A2C7">[a*sin(θ)]</span> and <span style="color:#B3A2C7">[b - a*cos(θ)]</span>. 
+The base of the triangle is [b - a*cos(θ)] and not [b + a*cos(θ)] because cos(θ) would be a negative value since it's in the second quadrant.
+If θ were to be acute, then the triangle would look something like this:</p>
+<img class="displayimg" src="acute.png">
+<p class="pmain">The base of the right-angled triangle is still [b - a*cos(θ)], so that means it doesn't matter if θ is 
+acute or obtuse, because our final equation will still be the same. Also, if this is a right-angled triangle, 
+that means if we use the pythagoras theorem, then:</p>
+<img class="displayimg" src="equation.png">
+<p class="pmain">If we expand, we get:</p>
+<img class="displayimg" src="expand.png">
+<p class="pmain">Now lets put sin<sup>2</sup>(θ) and cos<sup>2</sup>(θ) together:</p>
+<img class="displayimg" src="expand_2.png">
+<p class="pmain">Now lets take a<sup>2</sup> out:</p>
+<img class="displayimg" src="expand_3.png">
+<p class="pmain">Since [sin<sup>2</sup>(θ) + cos<sup>2</sup>(θ) = 1], we can simplify further to get our cosine rule:</p>
+<img class="displayimg" src="expand_4.png">
+<br>
+<hr>
+<script src="../../main.js"></script>
+</BODY>
+</HTML>

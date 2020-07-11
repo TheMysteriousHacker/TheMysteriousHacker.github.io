@@ -1,0 +1,339 @@
+﻿#body1, #body2{
+	margin:0px;
+	position:static;
+	margin-bottom:12px;
+	letter-spacing:0px;
+}
+
+@font-face {
+	font-family: 'forHeader';
+	src: url(font/NATIONPP.TTF);
+}
+#mainheader, #mainheader2{
+	top:0px;
+	width:100%;
+	position:sticky;
+	position: -webkit-sticky;
+	font-family:'forHeader';
+	letter-spacing:2px;
+	text-align:center;
+	border-bottom-style:solid;
+	border-bottom-width: 5px;
+	z-index:1
+}
+
+#mainheader2{
+	background-color: white;
+}
+h1{
+	margin: 0px;
+	font-size: 32px;
+	line-height: 38px;
+	letter-spacing: 0px;
+	padding: 12px 10px;
+}
+h2{
+	font-family:'forHeader';
+	font-size:28px;
+	line-height:30px;
+	margin-left:4%;
+	margin-right:4%;
+	margin-top:20px;
+	margin-bottom: 0px;
+}
+#gray{
+	display: none;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	background-color: rgba(135, 135, 135, 0.5);
+}
+@font-face {
+	font-family: "boxFont";
+	src: url("font/Grundschrift-Bold.otf");
+}
+#helpBox{
+	position:fixed;
+	font-family: "mainTextFont";
+	font-size:18px;
+	line-height:24px;
+	color:black;
+	white-space:normal;
+	background-color:#C0C0C0;
+	padding:0px 5px;
+	border:2px black dashed;
+	height:auto;
+	width:auto;
+	display:block;
+	visibility:hidden;
+	z-index:3;
+}
+#helpSquare{
+	position:fixed;
+	height:40px;
+	width:40px;
+	right:0px;
+	top:60px;
+	text-align:center;
+	color:#FFDD77;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	border-top-style:solid;
+	border-color:#663300;
+	border-width:4px;
+	border-radius:15px 0px 0px 15px;
+	background-color:#BB5500;
+	z-index:3
+}
+
+#helpSquare i{
+	font-size:20px;
+	line-height:40px;
+	width:100%
+}
+
+@font-face {
+	font-family: "mainTextFont";
+	src: url("font/SF_Cartoonist_Hand.ttf");
+}
+#sideButton{
+	position:fixed;
+	bottom:0px;
+	width:0px;
+	height:100%;
+	border-left-style:none;
+	border-color:#663300;
+	border-width:5px;
+	background-color:#BB5500;
+	right:0px;
+	overflow-y:auto;
+	overflow-x: hidden;
+	z-index:6;
+}
+#sideButton .setting{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 0px;
+	background-color: #994400;
+	color: #dd8800;
+	border-bottom-width: 4px;
+	border-bottom-color: #663300;
+	border-bottom-style: solid;
+}
+
+#sideButton .setting #text{
+	width: 72%;
+	display: flex;
+	line-height: 28px;
+	font-size: 25px;
+	margin: 5px 0px 5px 10px;
+	font-family: 'mainTextFont';
+	font-weight: bold;
+	background-color: #994400;
+	box-sizing: border-box;
+}
+
+#sideButton .setting #selector{
+	width: 28%;
+	display: flex;
+	height: 70%;
+	margin: 10px 10px 10px 5px;
+	background-color: #BB5500;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-align:right;
+	border: #441100 solid 4px;
+	border-radius: 10px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+}
+#sideButton .setting #selector i{
+	display: flex;
+	font-size: 22px;
+	color: #663300;
+}
+
+#sideButton img{
+	width:100%
+}
+#sideButton img:hover{
+	width:100%;
+	transform:scale(1.05,1.05);
+}
+
+#sideButton .topic{
+	max-width:80%;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+#sideButton div:last-child{
+	margin-bottom:20px;
+}
+
+@font-face {
+	font-family:subTitle;
+	src: url(font/LinLibertine_DR.ttf);
+}
+h3{
+	text-decoration:underline;
+	padding-top:10px;
+	font-size:28px;
+	font-family:subTitle;
+	margin:22px 12px;
+}
+
+ol{
+	list-style:circle
+}
+
+.plink{
+	font-family:"mainTextFont";
+	margin: 14px 5% 12px 10%;
+	font-size:20px;
+	line-height:22px
+}
+.plink a{
+	text-decoration: none;
+}
+.plink a:hover{
+	text-decoration: underline;
+}
+
+.pmain{
+	font-family: "mainTextFont";
+	font-size:25px;
+	line-height:32px;
+	margin:16px 20px 15px 20px;
+	position:static
+}
+.pmain2{
+	font-family: "mainTextFont";
+	font-size:25px;
+	line-height:34px;
+	margin: 20px 24px 14px 24px;
+	position:static
+}
+
+p sub{
+	vertical-align:bottom;
+	font-size:15px;
+	position:relative;
+	bottom:-0.4em;
+}
+p sup{
+	vertical-align:top;
+	font-size:15px;
+	position:relative;
+	bottom:0.4em;
+}
+p:not(.plink) a{
+	text-decoration:underline;
+	color:blue;
+}
+span[style="cursor:help"]{
+	text-decoration: none;
+}
+
+.displayimg, .displayimg2{
+	display:block;
+	margin:auto;
+	height: auto;
+	max-height:120px;
+	border-style:none;
+	position:static;
+	max-width:90%;
+}
+.displayimg2{
+	max-height:130px
+}
+
+.subText{
+	margin:10px 45px 15px 45px;
+	font-family: "mainTextFont";
+	font-size:23px;
+	line-height:26px;
+	overflow: hidden;
+	position:static
+}
+
+#source_format{
+	margin:0px 20px;
+	font-family:"mainTextFont";
+	font-size:30px;
+	line-height:35px;
+	position:static
+}
+
+ul{
+	position:static;
+	font-family:"subTitle";
+	font-size:18px;
+	line-height:22px;
+	padding-bottom:5px;
+	margin:18px 10px 20px 10px;
+	overflow-x:scroll;
+	color: black;
+}
+
+ul a{
+	color:black;
+	text-decoration: none
+}
+
+#fTable {
+	width:100%;
+	position:static;
+	font-family:'subTitle';
+	font-size:12px;
+	border-spacing:0px;
+	padding-right:5px;
+	padding-bottom: 10px;
+	margin:0px;
+	box-sizing: border-box;
+}
+.tdpadding{
+	padding: 1px 4px;
+	border-left-style:solid;
+	width:80%;
+	line-height:14px;
+}
+.tdpadding a{
+	text-decoration: none;
+}
+.tdpadding a:hover{
+	text-decoration:underline;
+}
+#drvitimg{
+	height:80px;
+	max-height:100px;
+	padding:3px
+}
+#abyss{
+	height:30px;
+	width:auto;
+	margin:5px
+}
+tr:last-child{
+	line-height:0px;
+	font-size:0px
+}
+
+hr{
+	border-width: 3px 0px 0px 0px;
+	border-top-style: solid;
+}
+
+/*
+-header is h1
+-calibri is the default font for image explaining, use lines of weight 6 points
+-for maths equation, use cambria maths (center,italics), preffered font size is 72
+-Evidence page has mainheader 2 and body 2 while title page has mainheader and body 1
+-All plinks must have target="_blank"
+-All elements with the style="cursor:help" should have text decoration as dashed underline
+-When writing history, sources should have disc bullet list points, if its not a source then have circle list points
+*/

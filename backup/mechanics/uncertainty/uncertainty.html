@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<HTML lang="en">
+<!--head~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<HEAD>
+<TITLE>Why Relative (Or Percentage) Uncertainties Are Added When Multiplying/Dividing Measured Quantities</TITLE>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</HEAD>
+<!--body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<BODY id="body2">
+<header id="mainheader2" style="background-color:white"><h1>Why Relative (Or Percentage) Uncertainties Are Added When Multiplying/Dividing Measured Quantities</h1></header>
+<p class="pmain">Lets say I have two measured values, <span style="color:#3399FF">y</span> and <span
+style="color:maroon">x</span>:</p>
+<img class="displayimg" src="1.png">
+<p class="pmain">And lets say we have define <span style="color:green">z</span> as:</p>
+<img class="displayimg" src="2.png">
+<p class="pmain">If we expand the above equation, then:</p>
+<img class="displayimg" src="3.png">
+<p class="pmain">Since <span style="color:#3399FF">&delta;y</span> and <span style="color:maroon">&delta;x</span>
+are very small numbers, we can conclude that:</p>
+<img class="displayimg" src="4.png">
+<p class="pmain">Since [<span style="color:green">z</span> = <span style="color:maroon">x</span><span
+style="color:#3399FF">y</span>], then:</p>
+<img class="displayimg" src="5.png">
+<p class="pmain">Now let <span style="color:maroon">R<sub>x</sub></span> and <span
+style="color:#3399FF">R<sub>y</sub></span> be the relative uncertainties, such that:</p>
+<img class="displayimg" src="6.png">
+<p class="pmain">Which would mean:</p>
+<img class="displayimg" src="7.png">
+<p class="pmain">Hence, we just proved that:</p>
+<img class="displayimg" src="8.png">
+<p class="pmain">This means that the relative uncertainty of the product (<span style="color:green">z</span>) is
+equal to the sum of the relative uncertainty of the two measured values (<span style="color:maroon">x</span> and
+<span style="color:#3399FF">y</span>). So if we ever have to multiply two measured values, then the we just have
+to add the uncertainty of the two measured values to get the uncertainty of the final value:</p>
+<img class="displayimg" src="9.png">
+<hr>
+<script src="../../main.js"></script>
+</BODY>
+</HTML>

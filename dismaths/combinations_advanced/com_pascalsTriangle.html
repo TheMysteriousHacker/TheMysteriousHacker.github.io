@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<HTML lang="en">
+<!--head~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<HEAD>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<TITLE>Proof That We Can Use Combinations To Find The Number In The Pascal's Triangle</TITLE>
+</HEAD>
+<!--body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<BODY id="body2">
+<header id="mainheader2" style="background-color:white"><h1>Proof That We Can Use Combinations To Find The Number In The Pascal's Triangle</h1></header>
+<p class="pmain">The table below represents Pascal's triangle:</p>
+<img class="displayimg" src="1.png">
+
+<p class="pmain">Lets use variable <span style="color:red">r</span> to represent the <span
+style="color:red">row</span> (which starts from 1) and variable <span style="color:#0066FF">c</span> to represent
+the <span style="color:#0066FF">column</span> (which starts from 0). In <span style="color:red">row 4</span> and
+<span style="color:#0066FF">column 2</span>, you will see the number 3, and in <span style="color:#0066FF">column
+3</span>, you will see 1, and if you add the two numbers, you get 4. Since this is the Pascal's triangle, it makes
+sense that [(the number in position <span style="color:red">r</span> and <span style="color:#0066FF">c - 1</span>)
++ (the number in position <span style="color:red">r</span> and <span style="color:#0066FF">c</span>) = (the number
+in position <span style="color:red">r + 1</span> and <span style="color:#0066FF">c</span>)], but how about using
+<span style="color:navy">combinations</span> to represent the numbers in Pascal's triangle, like this:</p>
+
+<img class="displayimg" src="2.png">
+
+<p class="pmain">It's easier to find a number in the Pascal's triangle using [<sub style="color:red">r</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c</sub>], where <span style="color:red">r</span> is the
+<span style="color:red">row</span> and <span style="color:#0066FF">c</span> is the <span
+style="color:#0066FF">column</span>. You can use a calculator to check if this holds true for the first few <span
+style="color:red">rows</span>, but how do we know that this works for all the <span style="color:red">rows</span>
+in Pascal's triangle? In other words, what if there is a specific <span style="color:red">row</span> for which
+[<sub style="color:red">r</sub><span style="color:navy">C</span><sub style="color:#0066FF">c</sub>] doesn't work?
+In order to prove that [<sub style="color:red">r</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c</sub>] works for all <span style="color:red">rows</span>, we can start by proving it for
+the first number in every <span style="color:red">row</span>, where the <span style="color:#0066FF">column</span>
+is 0. No matter which <span style="color:red">row</span> we choose, [<sub style="color:red">r</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">0</sub>] will always be 1, and since the first number in
+every <span style="color:red">row</span> of the Pascal's triangle is 1, then we know that [<sub
+style="color:red">r</sub><span style="color:navy">C</span><sub style="color:#0066FF">c</sub>] holds true for the
+first number in every <span style="color:red">row</span> of the Pascal's triangle. Now what about all the other
+numbers? For that, we would have to prove that [<sub style="color:red">r</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c-1</sub> + <sub style="color:red">r</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c</sub> = <sub style="color:red">r+1</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c</sub>]. To do this, lets start by expanding and simplifying [<sub
+style="color:red">r</sub><span style="color:navy">C</span><sub style="color:#0066FF">c-1</sub> + <sub
+style="color:red">r</sub><span style="color:navy">C</span><sub style="color:#0066FF">c</sub>]:</p>
+
+<img class="displayimg" src="3.png">
+
+<p class="pmain">If we simplify this even further:</p>
+
+<img class="displayimg" src="4.png">
+
+<p class="pmain">We already know what [<sub style="color:red">r+1</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c</sub>] is:</p>
+
+<img class="displayimg" src="5.png">
+
+<p class="pmain">Hence we have proven that [<sub style="color:red">r</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c-1</sub> + <sub style="color:red">r</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c</sub> = <sub style="color:red">r+1</sub><span style="color:navy">C</span><sub
+style="color:#0066FF">c</sub>]. Since we already know that [<sub style="color:red">r</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c</sub>] gives the numbers in the Pascal's triangle for the
+first few <span style="color:red">rows</span>, then by using the equation [<sub style="color:red">r</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c-1</sub> + <sub style="color:red">r</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c</sub> = <sub style="color:red">r+1</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c</sub>], we know that [<sub style="color:red">r</sub><span
+style="color:navy">C</span><sub style="color:#0066FF">c</sub>] will also do the same for other <span
+style="color:red">rows</span> as well.</p>
+
+<hr>
+<script src="../../main.js"></script>
+</BODY>
+</HTML>

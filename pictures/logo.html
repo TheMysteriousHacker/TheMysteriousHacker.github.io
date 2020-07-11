@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+#outer{
+    background-color: rgb(255,217,102);
+    height: 620px;
+    width: 620px;
+    margin: 100px auto 0px auto;
+    border: rgb(191,144,0) 10px solid;
+}
+@font-face {
+    font-family: "use";
+    src: url("../font/pointfree.ttf");
+}
+#D{
+    position:absolute;
+    font-family: use;
+    top: 0px;
+    left: 400px;
+    color: rgb(0,122,192);
+    text-shadow: -5px -5px 0 rgb(37,64,97), 5px -5px 0 rgb(37,64,97), -5px 5px 0 rgb(37,64,97), 5px 5px 0 rgb(37,64,97);
+    height: 700px;
+    width: 600px;
+    font-size: 600px;
+    line-height: 700px;
+    z-index: 5;
+}
+#I{
+    position:absolute;
+    font-family: use;
+    color: rgb(192,0,0);
+    text-shadow: -5px -5px 0 rgb(99,37,35), 5px -5px 0 rgb(99,37,35), -5px 5px 0 rgb(99,37,35), 5px 5px 0 rgb(99,37,35);
+    top: 190px;
+    left: 610px;
+    height: 560px;
+    width: 600px;
+    font-size: 550px;
+    line-height: 560px;
+}
+#write{
+    width: 100%;
+    margin: 12px auto;
+    font-family: use;
+    font-size: 78px;
+    letter-spacing: 12px;
+    line-height: 78px;
+    text-align: center;
+    color: rgb(0,122,192);
+}
+#write span{
+    color: rgb(192,0,0);
+
+}
+</style>
+</head>
+<body>
+<div id='outer'>
+    <div id="D">D</div>
+    <div id="I">I</div>
+</div>
+<div id="write">Derive <span>It</span>!</div>
+</body>
+</html>

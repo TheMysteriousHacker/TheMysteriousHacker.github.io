@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<HTML lang="en">
+<!--head~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<HEAD>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<TITLE>Area Of A Trapezium</TITLE>
+</HEAD>
+<!--body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<BODY id="body2">
+<header id="mainheader2" style="background-color:white"><h1>Area Of A Trapezium</h1></header>
+<p class="pmain">You must already know that the area of a triangle is the half times base times height, if not then
+<a href="../area_triangle/area_triangle.html" style="color:blue" target="_blank">click here</a>.
+Now here is a random trapezium with <span style="color:orange">height h</span>, <span style="color:red">top side
+a</span> and <span style="color:#3399FF">bottom side b</span>:</p>
+<img class="displayimg" src="random.png">
+<p class="pmain">We can image this as two triangles and one rectangle, and we can also divide the base for each shape:</p>
+<img class="displayimg" src="two_triangles.png">
+<p class="pmain">The area of the first triangle is [1/2 * <span style="color:#88CCFF">b<sub>1</sub></span> * <span
+style="color:orange">h</span>], the area of the second triangle is [1/2 * <span style="color:#0066FF">b<sub>3</sub>
+</span> * <span style="color:orange"> h</span>], and the area of the middle rectangle is [<span style="color:#3399FF"
+>b<sub>2</sub></span> * <span style="color:orange">h</span>]. We can also write <span style="color:#3399FF">b<sub>2
+</sub></span>as [1/2 * (<span style="color:#3399FF">b<sub>2</sub></span> + <span style="color:red">a</span>)],
+since <span style="color:red">a</span>  is the same as <span style="color:#3399FF">b<sub>2</sub></span>:</p>
+<img class="displayimg" src="area.png">
+<p class="pmain">The total area of this shape is [(1/2 * <span style="color:#88CCFF">b<sub>1</sub></span> * <span
+style="color:orange">h</span>) + ((1/2 * (<span style="color:#3399FF">b<sub>2</sub></span> + <span style="color:red">
+a</span>)) * <span style="color:orange">h</span>) + (1/2 * <span style="color:#0066FF">b<sub>3</sub></span> *
+<span style="color:orange"> h</span>)], we can rewrite this as [1/2 * <span style="color:orange">h</span> * (
+<span style="color:#88CCFF">b<sub>1</sub></span> + <span style="color:#3399FF">b<sub>2</sub></span> + <span
+style="color:red">a</span> + <span style="color:#0066FF">b<sub>3</sub></span>)]. Since the <span
+style="color:#3399FF">bottom side b</span> is [<span style="color:#88CCFF">b<sub>1</sub></span> + <span
+style="color:#3399FF">b<sub>2</sub></span> + <span style="color:#0066FF">b<sub>3</sub></span>], we can write the area
+as [1/2 * <span style="color:orange">h</span> * (<span style="color:#3399FF">b</span> + <span style="color:red">
+a</span>)].</p>
+<hr>
+<script src="../../main.js"></script>
+</BODY>
+</HTML>
