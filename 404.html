@@ -17,26 +17,51 @@ div{
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    border: 5px solid rgb(150,60,00);
-    padding: 10px;
+    border: 5px solid #663300;
     border-radius: 10px;
     background-color: #FFD966;
 }
 div p{
     font-family: rFont;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 15px 0px;
+    box-sizing: border-box;
 }
-a{
+button{
     font-family: rFont;
     font-size: 18px;
+    color: #331100;
+    display: block;
     width: 100%;
+    line-height: 22px;
+    background-color: rgb(200,100,00);
+    outline: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+p:last-child{
+    border-top: 4px solid #663300;
+    margin: 0px;
+    padding: 5px 0px;
+    background-color: rgb(200,100,00);
+}
+p:hover button{
+    font-size: 20px;
 }
 </style>
+<script>
+function goBack(){
+    window.history.back();
+}
+</script>
 </head>
 <body>
 <div>
 <p>404 Page Not Found</p>
-<p>This Page Is Underconstruction</p>
-<a>Go Back</a>
+<p>This Page May Be Underconstruction</p>
+<p><button onclick="goBack()">Go Back</button></p>
 </div>
 </body>
 </html>
