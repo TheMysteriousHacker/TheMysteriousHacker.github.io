@@ -232,7 +232,8 @@ p sup{
 	bottom:0.4em;
 }
 p:not(.plink) a{
-	text-decoration:underline;
+	text-decoration: none;
+	border-bottom: blue solid 2px;
 	color:blue;
 }
 span[style="cursor:help"]{

@@ -237,7 +237,8 @@ p sup{
 
 p:not(.plink) a{
 	color:blue;
-	text-decoration:underline;
+	text-decoration: none;
+	border-bottom: blue solid 2px;
 }
 
 span[data-title]{
