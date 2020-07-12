@@ -363,7 +363,7 @@ hr{
 	#fTable td{border-width: 2px;}
 	.tdpadding{width:80%;padding-left:5px;line-height:10px;padding-right:5px}
 	#abyss{height:20px;width:auto;margin:5px}
-	#drvitimg{height:53px;padding:3px}
+	#drvitimg{height:53px;margin:3px}
 	tr:last-child{line-height:0px}
 }
 /*
