@@ -328,10 +328,6 @@ hr{
 .tdpadding a:hover{
 	text-decoration:underline;
 }
-td:last-of-type{
-	line-height: 40px;
-	font-size: 0px;
-}
 
 
 @media screen and (max-width:800px){
