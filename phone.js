@@ -176,7 +176,6 @@ else{
 
 }
 
-
 var bodybackColor = $("body").css("background-color");
 var headerColor = $("header").css("color");
 var headerbgColor = $("header").css("background-color");
