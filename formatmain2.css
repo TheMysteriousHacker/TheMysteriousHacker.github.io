@@ -319,7 +319,7 @@ hr{
 .tdpadding a:hover{
 	text-decoration:underline;
 }
-td:last-of-type{
+#fTable tr:last-of-type{
 	line-height: 30px;
 	font-size: 0px;
 }
