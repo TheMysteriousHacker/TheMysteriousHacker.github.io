@@ -1,0 +1,136 @@
+﻿<!DOCTYPE HTML>
+<HTML lang="en" id="html">
+<!--head~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<HEAD>
+<link rel="stylesheet" type="text/css" href="index.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="pictures/logo.png">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<TITLE>DeriveIt</TITLE>
+</HEAD>
+<!--page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<body id="body">
+<div id="loading">
+<table id="loadcontain">
+	<tr>
+		<td id="forline" rowspan="2"><img src="pictures/link_logo.png"></td>
+		<td id="betweenBorder" rowspan="2"></td>
+		<td id="recommended"><b>Thank You For Your Submission</b><br/>Make sure to check you email for our reply</td>
+	</tr>
+	<tr><td><button id="continue" onclick="afterLoading()" disabled="disabled">loading</button></td></tr>	
+</table>
+</div>
+<div id="sideborder">
+<header>
+<h1 id="mainheading">Welcome To <span style="color:#0066FF">Derive</span>It<span style="color:#0066FF">!</span></h1>
+</header>
+
+<nav>
+<table id="maintable">
+	<tr>
+		<td id="ttitle">Choose Your Topic:</td>
+	</tr>
+	<!--When making images in powerpoint, the width should be 646px and height should be 334px-->
+	<tr class="tableb">
+		<td>
+		<div class="first">
+			<div class="second"><a href="algebra/algebra.html"><img class="imginfo" alt="algebra" src="pictures/algebra.png"></a></div>
+			<div class="second"><a href="geometry/geometry.html"><img class="imginfo" alt="geometry" src="pictures/geometry.png"></a></div>
+		</div>
+		</td>
+	</tr>
+	<tr class="tableb">
+		<td>
+		<div class="first">
+			<div class="second"><a href="dismaths/dismaths.html"><img class="imginfo" alt="discrete mathematics" src="pictures/dismaths.png"></a></div>
+			<div class="second"><a href="linear_algebra/linear_algebra.html"><img class="imginfo" alt="linear algebra" src="pictures/linear_algebra.png"></a></div>
+		</div>
+		</td>
+	</tr>
+	<tr class="tableb">
+		<td>
+		<div class="first">
+			<div class="second"><a href="trigonometry/trigonometry.html"><img class="imginfo" alt="trigonometry" src="pictures/trigonometry.png"></a></div>
+			<div class="second"><a href="calculus/calculus.html"><img class="imginfo" alt="calculus" src="pictures/calculus.png"></a></div>
+		</div>
+		</td>
+	</tr>
+	<tr class="tableb">
+		<td>
+		<div class="first">
+			<div class="second"><a href="ps/ps.html"><img class="imginfo" alt="probability and statistics" src="pictures/ps.png"></a></div>
+			<div class="second"><a href="mechanics/mechanics.html"><img class="imginfo" alt="mechanics" src="pictures/mechanics.png"></a></div>
+		</div>
+		</td>
+	</tr>
+	<tr class="tableb">
+		<td>
+		<div class="first">
+			<div class="second"><a href="astronomy/astronomy.html"><img class="imginfo" alt="astronomy" src="pictures/astronomy.png"></a></div>
+			<div class="second"><a href="chemistry/chemistry.html"><img class="imginfo" alt="chemistry" src="pictures/chemistry.png"></a></div>
+		</div>
+		</td>
+	</tr>
+	<tr class="tableb">
+		<td>
+		<div class="first">
+			<div class="second"><a href="electricity/electricity.html"><img class="imginfo" alt="electricity" src="pictures/em.png"></a></div>
+			<div class="second"><a href="biology/biology.html"><img class="imginfo" alt="biology" src="pictures/biology.png"></a></div>
+		</div>
+		</td>
+	</tr>
+</table>
+</nav>
+
+<!-- recently added -->
+<table id="tableadded">
+	<tr class="tback">
+		<td class="ttitle2" rowspan="4"><span style="float:left">Recently</span><span style="float:right">Added</span></td>
+		<td class="ttext"><a href="dismaths/binomial_theorem/binomial_theorem.html">Why The Binomial Theorem Works</a></td>
+	</tr>
+	<tr class="tback">
+		<td class="ttext"><a href="astronomy/heliocentric/heliocentric.html">The Heliocentric View</a></td>
+	</tr>
+	<tr class="tback">
+		<td class="ttext"><a href="calculus/e_as_series/e_series.html">Representing e As An Infinite Series</a></td>
+	</tr>
+	<tr class="tback">
+		<td class="ttext"><a href="calculus/limits/define_e.html">Definition of e</a></td>
+	</tr>
+</table>
+<!-- recently edited -->
+<table id="tableedit">
+	<tr class="tback">
+		<td class="ttitle2" rowspan="4"><span style="float:left">Recently</span><span style="float:right">Edited</span></td>
+		<td class="ttext"><a href="dismaths/binomial_theorem/binomial_theorem.html">Why The Binomial Theorem Works</a></td>
+	</tr>
+	<tr class="tback">
+		<td class="ttext"><a href="astronomy/heliocentric/heliocentric.html">The Heliocentric View</a></td>
+	</tr>
+	<tr class="tback">
+		<td class="ttext"><a href="calculus/e_as_series/e_series.html">Representing e As An Infinite Series</a></td>
+	</tr>
+	<tr class="tback">
+		<td class="ttext"><a href="astronomy/geocentric/geocentric.html">The Geocentric View</a></td>
+	</tr>
+</table>
+
+<!--footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<footer>
+<hr>
+<table id="footertd">
+	<tr>
+		<td class="footertd2" style="width:1000px">If you find a problem in this website or a maths-related mistake, <a href="submitpage1.html" target="_blank">click here</a></td>
+		<td rowspan="3" style="text-align:center;width:300px"><A HREF="http://www.aprelium.com" target="_blank"><IMG id="pba" SRC="pictures/pwrabyss.gif" ALT="Powered by Abyss Web Server" TITLE="Powered by Abyss Web Server"></A></td>
+	</tr>
+	<tr><td class="footertd2">If there are any equations for which you want proof for, <a href="submitpage2.html" target="_blank">click here</a></td></tr>
+	<tr><td class="footertd2">For any suggestion and ideas, <a href="submitpage3.html" target="_blank">click here</a></td></tr>
+	<tr><td colspan="2">DeriveIt &copy; - All rights reserved</td></tr>
+</table>
+</footer>
+</div>
+<div id="bline"></div>
+<script src="index.js"></script>
+</body>
+</HTML>
