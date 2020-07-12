@@ -330,6 +330,7 @@ hr{
 }
 #fTable tr:last-of-type{
 	font-size: 0px;
+	line-height: 40px;
 }
 
 
