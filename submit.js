@@ -74,10 +74,7 @@
             if (formElements) {
               formElements.style.display = "none"; // hide form
             }
-            var thankYouMessage = form.querySelector(".thankyou_message");
-            if (thankYouMessage) {
-              thankYouMessage.style.display = "block";
-            }
+            window.setTimeout(function(){window.location.replace("index.html")},3000)
           }
       };
       // url encode form data for sending as post data
