@@ -1,6 +1,5 @@
 import cgi
 import smtplib
-import sensitive
 import sys
 
 data = cgi.FieldStorage()
