@@ -184,8 +184,12 @@ var headerbColor = $("header").css("border-bottom-color");
 $("h2").css({"color":headerbColor});
 addTable(bodybackColor, headerColor, headerbgColor, headerbColor);
 
+var eachlink;
 $("body").ready(function(){
 	$("a").each(function(){
-		$(this).attr({"target":"_blank"});
+		eachlink = $(this);
+		if (eachlink.attr("href") != "underconstruction"){
+			eachlink.attr({"target":"_blank"});
+		}
 	})
 })
