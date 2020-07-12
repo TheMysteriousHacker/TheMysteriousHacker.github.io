@@ -256,9 +256,6 @@ span[data-title]{
 .displayimg2{
 	max-height:250px
 }
-#drvitimg{
-	height:120px;
-}
 .subText{
 	margin:15px 130px 20px 130px;
 	font-family: "mainTextFont";
@@ -296,6 +293,12 @@ ul a:hover{
 	text-decoration:underline
 }
 
+hr{
+	border-width: 3px 0px 0px 0px;
+	border-top-style: solid;
+	height: 1px;
+	margin: 10px 0px;
+}
 #fTable {
 	width:100%;
 	position:static;
@@ -306,6 +309,9 @@ ul a:hover{
 	padding-right:42px;
 	margin-bottom:5px;
 	box-sizing: border-box;
+}
+#drvitimg{
+	height:120px;
 }
 #fTable td{
 	border-width: 3px
@@ -322,13 +328,11 @@ ul a:hover{
 .tdpadding a:hover{
 	text-decoration:underline;
 }
-
-hr{
-	border-width: 3px 0px 0px 0px;
-	border-top-style: solid;
-	height: 1px;
-	margin: 10px 0px;
+td:last-child{
+	line-height: 40px;
+	font-size: 0px;
 }
+
 
 @media screen and (max-width:800px){
 	#mainheader, #mainheader2{letter-spacing:2px;border-bottom-width: 3px;}
