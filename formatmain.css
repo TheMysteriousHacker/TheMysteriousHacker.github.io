@@ -317,8 +317,8 @@ hr{
 	border-width: 3px
 }
 .tdpadding{
-	padding:0px 10px 0px 5px;
-	line-height: 17px;
+	padding:1px 10px 1px 5px;
+	line-height: 16px;
 	border-left-style:solid;
 	border-right-style:solid;
 }
