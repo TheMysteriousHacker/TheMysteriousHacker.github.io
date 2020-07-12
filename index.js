@@ -76,6 +76,11 @@ bottom();
 window.onresize = bottom;
 
 $("#sideborder").hide();
+
+if (window.location.href.indexOf("emailSent") != -1){
+	alert("email")
+}
+
 function whileLoading(){
 	if ($("#forline img")[0].complete){
 		document.getElementById("continue").disabled = false;

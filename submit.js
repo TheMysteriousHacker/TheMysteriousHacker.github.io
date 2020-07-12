@@ -74,7 +74,7 @@
             if (formElements) {
               formElements.style.display = "none"; // hide form
             }
-            window.setTimeout(function(){window.location.replace("index.html")},1000)
+            window.setTimeout(function(){window.location.replace("index.html?emailSent=yes")},1000)
           }
       };
       // url encode form data for sending as post data
