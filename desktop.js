@@ -195,8 +195,12 @@ else{
 	})
 }
 
+var eachlink;
 $("body").ready(function(){
 	$("a").each(function(){
-		$(this).attr({"target":"_blank"})
+		eachlink = $(this);
+		if (eachlink.attr("href") != "underconstruction"){
+			eachlink.attr({"target":"_blank"});
+		}
 	})
 })
