@@ -320,14 +320,6 @@ ul a:hover{
 .tdpadding a:hover{
 	text-decoration:underline;
 }
-#abyss{
-	height:31px;WIDTH:88px
-}
-
-tr:last-child{
-	line-height:50px;
-	font-size:0px
-}
 
 hr{
 	border-width: 3px 0px 0px 0px;
