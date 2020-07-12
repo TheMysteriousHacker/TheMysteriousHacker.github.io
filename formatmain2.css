@@ -286,6 +286,10 @@ ul a{
 	text-decoration: none
 }
 
+hr{
+	border-width: 3px 0px 0px 0px;
+	border-top-style: solid;
+}
 #fTable {
 	width:100%;
 	position:static;
@@ -296,6 +300,11 @@ ul a{
 	padding-bottom: 10px;
 	margin:0px;
 	box-sizing: border-box;
+}
+#drvitimg{
+	height:80px;
+	max-height:100px;
+	margin:3px
 }
 .tdpadding{
 	padding: 1px 4px;
@@ -310,16 +319,11 @@ ul a{
 .tdpadding a:hover{
 	text-decoration:underline;
 }
-#drvitimg{
-	height:80px;
-	max-height:100px;
-	margin:3px
+td:last-of-type{
+	line-height: 40px;
+	font-size: 0px;
 }
 
-hr{
-	border-width: 3px 0px 0px 0px;
-	border-top-style: solid;
-}
 
 /*
 -header is h1

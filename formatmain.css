@@ -328,7 +328,7 @@ hr{
 .tdpadding a:hover{
 	text-decoration:underline;
 }
-td:last-child{
+td:last-of-type{
 	line-height: 40px;
 	font-size: 0px;
 }
