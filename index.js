@@ -78,7 +78,7 @@ window.onresize = bottom;
 $("#sideborder").hide();
 
 if (window.location.href.indexOf("emailSent") != -1){
-	$("#recommended").html("<b>Thank You For Your Submission</b><br/>Make sure to check you email for our reply")
+	$("#recommended").html('<b>Thank You For Your Submission</b><br/>Make sure to check you email for our reply</span>').css("text-align","center");
 }
 
 function whileLoading(){
