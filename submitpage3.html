@@ -11,11 +11,11 @@
 <body>
 <center>
 <h1>Please Fill This Form</h1>
-<form method="post" action="index.py" autocomplete="on" id="form" enctype="application/x-www-form-urlencoded">
+<form method="POST" action="https://script.google.com/macros/s/AKfycbzEOr4apY8brqvIlAR2C-JN93zl35YG7GzTEe6TAA/exec" autocomplete="on" id="form" class="gform" data-email="uzairarif@deriveit.net">
 <div id="divleft">
 <br>
 <p>Your Full Name:</p>
-<input type="text" name="fn" required="required" placeholder="<First Name> <Last Name>" autofocus>
+<input type="text" name="name" required="required" placeholder="<First Name> <Last Name>" autofocus>
 <p>Your email address:</p>
 <input type="email" name="email" required="required" placeholder="someone@example.whatever">
 <br>
@@ -23,10 +23,11 @@
 </div>
 <div id="divright">
 <p>Mention The Improvements You Would Like To See:</p>
-<textarea required="required" maxlength="1500" name="idea" placeholder="<I suggest that...>"></textarea>
+<textarea required="required" maxlength="1500" name="message" placeholder="<I suggest that...>"></textarea>
 </div>
-<input style="width:120px;margin-bottom:20px;height:20px" formtarget="_blank" type="submit" name="submit3" value="submit">
+<button style="width:120px;margin-bottom:20px;height:20px" type="submit" name="type" value="suggestion">submit</button>
 </form>
 </center>
+<script data-cfasync="false" type="text/javascript" src="submit.js"></script>
 </BODY>
 </HTML>
