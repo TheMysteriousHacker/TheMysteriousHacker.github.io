@@ -135,7 +135,16 @@ function darkmode(){
 	$("body").css('background-color',backgroundColor);
 	$("h3").css('color',headerColor);
 	$("#source_format").css('color',headerColor);
-	addTable(backgroundColor, fontColor, headerBackColor, borderColor);
+	$.when(addTable(backgroundColor, fontColor, headerBackColor, borderColor,fontWeight)).done(function(){
+		if (darkEl.attr('class') == "fa fa-times"){
+			$("#drvitimg").css("border","none");
+			$("#drvitimg").attr("src","../../pictures/link_logo.png");
+		}
+		else{
+			$("#drvitimg").css("border", borderColor + " 3px solid");
+			$("#drvitimg").attr("src","../../pictures/link2.png");
+		}
+	});
 }
 
 var helpEl;
