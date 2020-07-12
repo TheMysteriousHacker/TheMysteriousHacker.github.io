@@ -1,13 +1,8 @@
-function addTable(bbColor, hColor, hbgColor, hbColor){
+function addTable(bbColor, hColor, hbgColor, hbColor, fontW){
 	$("center #fTable").remove();
 	$("hr").css("border-top-color",hbColor);
 	$("body").append('<CENTER><table id="fTable" style="color:' + hColor + ';background-color:' + bbColor + '"><tr><td rowspan="4" style="width:150px;text-align:center"><a href="../../index.html"><img alt="click here to go to the main page" id="drvitimg" src="../../pictures/link_logo.png"></a></td><td class="tdpadding" style="border-color:' + hbColor + ';background-color:' + hbgColor + ';border-top-style:solid">If you found a problem in this website or a maths-related mistake, <a href="../../submitpage1.html" style="color:' + hColor +'">click here</a></td><td rowspan="3" style="border-color:' + hbColor + ';background-color:' + hbgColor + ';border-right-style:solid;text-align:center;border-bottom-style:solid;border-top-style:solid"><A HREF="http://www.aprelium.com"><IMG SRC="../../pictures/pwrabyss.gif" ALT="Powered by Abyss Web Server" TITLE="Powered by Abyss Web Server" id="abyss" style="border-style:solid;border-color:' + hbColor + '"></A></td></tr><tr><td class="tdpadding" style="border-color:' + hbColor + ';background-color:' + hbgColor + '">If there are any equations for which you want proof for, <a href="../../submitpage2.html" style="color:' + hColor + '">click here</a></td></tr><tr><td class="tdpadding" style="border-color:' + hbColor + ';background-color:' + hbgColor + ';border-bottom-style:solid">For any suggestion and ideas, <a href="../../submitpage3.html" style="color:' + hColor + '">click here</a></td></tr><tr><td colspan="2">lol</td></tr></table></CENTER>')
-	if((hColor == 'black')||(hColor == 'rgb(0, 0, 0)')){
-		$("#fTable tr").css("font-weight","bold");
-	}
-	else{
-		$("#fTable tr").css("font-weight","normal");
-	}
+	$("#fTable tr").css("font-weight",fontW);
 }
 var elWidth;
 function showHelp(event){
@@ -60,6 +55,11 @@ var headerColor;
 var headerBackColor;
 var borderColor;
 var d;
+var color;
+var red;
+var green;
+var blue;
+var fontWeight;
 function darkmode(){
 	d = new Date();
 	d.setTime(d.getTime()+1000000000000);
@@ -71,6 +71,7 @@ function darkmode(){
 		headerColor = '#dd8811';
 		headerBackColor = '#662200';
 		borderColor = '#331100';
+		fontWeight = 'normal';
 		document.cookie = "brown=yes;expires=" + d.toUTCString() + ";path=/";
 		$(".pmain").css({'color':fontColor,'text-shadow':'3px 2px 3px #331100'});
 		$(".pmain2").css({'color':fontColor,'text-shadow':'3px 2px 3px #331100'});
@@ -100,6 +101,7 @@ function darkmode(){
 		headerColor = 'black';
 		headerBackColor = 'white';
 		borderColor = 'black';
+		fontWeight = 'bold';
 		document.cookie = "brown=no;expires=" + d.toUTCString() + ";path=/";
 		$(".pmain").css({'color':fontColor,'text-shadow':'none'});
 		$(".pmain2").css({'color':fontColor,'text-shadow':'none'});
