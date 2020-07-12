@@ -312,7 +312,8 @@ ul a:hover{
 }
 .tdpadding{
 	padding-left:14px;
-	border-left-style:solid
+	border-left-style:solid;
+	border-right-style:solid;
 }
 .tdpadding a{
 	text-decoration: none;

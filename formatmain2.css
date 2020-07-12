@@ -315,15 +315,6 @@ ul a{
 	max-height:100px;
 	margin:3px
 }
-#abyss{
-	height:30px;
-	width:auto;
-	margin:5px
-}
-tr:last-child{
-	line-height:0px;
-	font-size:0px
-}
 
 hr{
 	border-width: 3px 0px 0px 0px;
