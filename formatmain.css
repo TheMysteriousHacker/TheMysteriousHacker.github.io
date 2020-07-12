@@ -328,6 +328,9 @@ hr{
 .tdpadding a:hover{
 	text-decoration:underline;
 }
+#fTable tr:last-of-type{
+	font-size: 0px;
+}
 
 
 @media screen and (max-width:800px){
