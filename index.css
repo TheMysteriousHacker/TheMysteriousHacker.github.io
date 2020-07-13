@@ -354,9 +354,11 @@ hr{
 	.ttitle2{font-size:24px;padding:0px 10px;line-height:30px;font-weight:bold;color:#CF40FF}
 }
 @media screen and (max-width:1023px){
+	#mainheading{line-height:40px;font-size:30px}
 	.footertd2{font-size:11px;line-height: 15px;padding-left:10px}
-	.changeSlide i{font-size: 30px;line-height: 40px;}
-	.changeSlide:hover i{font-size: 35px;}
+	.changeSlide{width: 8%;}
+	.changeSlide i{font-size: 25px;line-height: 35px;}
+	.changeSlide:hover i{font-size: 30px;}
 }
 @media screen and (min-device-width:1024px) and (max-width:1023px){
 	#ttitle{font-size: 35px;letter-spacing: 1px;padding-left: 10px;}
