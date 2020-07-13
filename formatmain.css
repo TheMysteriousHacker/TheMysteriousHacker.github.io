@@ -322,11 +322,14 @@ hr{
 	border-left-style:solid;
 	border-right-style:solid;
 }
-.tdpadding a{
+#fTable a{
 	text-decoration: none;
 }
-.tdpadding a:hover{
+#fTable a:hover{
 	text-decoration:underline;
+}
+#fTable a:visited{
+	color: blue;
 }
 #fTable tr:last-of-type{
 	font-size: 0px;

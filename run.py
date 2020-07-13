@@ -14,7 +14,7 @@ for i in range(len(names)):
     for j in names[i]:
         if j == '.':
             dot = True
-    if dot == False and names[i] != 'backup' and names[i] != 'jsphp' and names[i] != 'islam' and names[i] != 'extra' and names[i] != 'pictures' and names[i] != 'font' and names[i] != "reuse proof" and names[i] != "__pycache__":
+    if dot == False and names[i] != 'backup' and names[i] != 'jsphp' and names[i] != 'islam' and names[i] != 'extra' and names[i] != 'pictures' and names[i] != 'font' and names[i] != 'CNAME' and names[i] != "reuse proof" and names[i] != "__pycache__":
         insideFile = (os.listdir(path = names[i]))
         for k in range(len(insideFile)):
             if "." not in insideFile[k]:

@@ -71,9 +71,87 @@ function colorcorrect(){
 var bEl = document.getElementById("bline");
 function bottom(){
 	bodyh = document.getElementById("body").offsetHeight;
-	bEl.style.top = (bodyh - 10) + "px";}
+	bEl.style.top = (bodyh - 10) + "px";
+}
 bottom();
-window.onresize = bottom;
+
+function changeImgHeight(){
+	$("#images").css("height",$("#images img")[0].offsetHeight);
+	$(".changeSlide").css("height",$("header")[0].offsetHeight);
+}
+imgArray = ['<img src="pictures/slideshow1.png">',
+			'<img src="pictures/slideshow2.png">',
+			'<img src="pictures/slideshow3.png">',]
+refArray = ['astronomy/geocentric/geocentric.html',
+			'astronomy/heliocentric/De revolutionibus orbium coelestium.html',
+			'dismaths/factorials_and_permutation/factorials_and_permutations.html']
+var slideShowIndex = 1;
+var prevIndex = imgArray.length - 1;
+var nextSlideVar;
+var enableSlide = true;
+function changeslide(){
+	if (enableSlide == true){
+		enableSlide = false;
+		$("#images").append(imgArray[slideShowIndex]);
+		$("#images").animate({
+			scrollLeft: parseInt($($("#images img")[0]).css("width"))
+		},500,function(){
+			$($("#images img")[0]).remove();
+			$("#images").attr("href",refArray[slideShowIndex]);
+			if (slideShowIndex == imgArray.length-1){
+				slideShowIndex = 0;
+			}
+			else{
+				slideShowIndex++;
+			}
+			if (prevIndex == imgArray.length-1){
+				prevIndex = 0;
+			}
+			else{
+				prevIndex++;
+			}
+			enableSlide = true;
+			nextSlideVar = window.setTimeout(changeslide, 3000);
+		});
+	}
+}
+function rightSlideNow(){
+	clearTimeout(nextSlideVar);
+	changeslide();
+}
+function leftSlideNow(){
+	if (enableSlide == true){
+		enableSlide = false;
+		clearTimeout(nextSlideVar);
+		$("#images").prepend(imgArray[prevIndex]);
+		$("#images").scrollLeft(parseInt($($("#images img")[0]).css("width")));
+		$("#images").animate({
+			scrollLeft: 0
+		},500,function(){
+			$($("#images img")[1]).remove();
+			$("#images").attr("href",refArray[prevIndex]);
+			if (slideShowIndex == 0){
+				slideShowIndex = imgArray.length-1;
+			}
+			else{
+				slideShowIndex--;
+			}
+			if (prevIndex == 0){
+				prevIndex = imgArray.length-1;
+			}
+			else{
+				prevIndex--;
+			}
+			enableSlide = true;
+			nextSlideVar = window.setTimeout(changeslide, 3000);
+		});
+	}
+}
+
+window.onresize = function(){
+								bottom();
+								changeImgHeight();
+							};
 
 $("#sideborder").hide();
 
@@ -102,9 +180,10 @@ function afterLoading(){
 	$("#loading").slideUp(1000,function(){
 		$("#body").css({
 			"border-top-style":"solid",
-			"border-color": "#663300",
+			"border-top-color": "#663300",
 			"border-width":"5px"
 		});
+		$(".changeSlide").show(1000);
 	});
 	$("#bline").css({"border-bottom-style":"solid"});
 	$("a").attr('target',"_blank")
@@ -116,5 +195,7 @@ function afterLoading(){
 		menuCounter += 1;
 		$(this).attr({"class":"menu","id":"menu"+menuCounter});
 	})
+	changeImgHeight();
 	colorcorrect();
+	nextSlideVar = window.setTimeout(changeslide, 3000);
 }

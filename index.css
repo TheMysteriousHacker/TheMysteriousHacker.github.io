@@ -94,6 +94,14 @@
 	box-sizing: border-box;
 	padding-bottom:10px;
 }
+header{
+	background-color: rgb(255,255,204);
+	border-bottom-style:solid;
+	border-color:#663300;
+	border-width:6px;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+}
 @font-face {
 	font-family: 'mainHeading';
 	src: url("font/Cabin-Regular.ttf");
@@ -101,12 +109,12 @@
 #mainheading{
 	color:red;
 	font-family:'mainHeading';
-	font-size:52px;
-	line-height:70px;
+	font-size:45px;
+	line-height:60px;
 	letter-spacing:4px;
-	margin:0px auto 33px auto;
-	width:96%;
-	max-width:1250px;
+	margin:0px auto;
+	width:94%;
+	max-width:1000px;
 	border-style:solid;
 	border-top-style:none;
 	border-width:4px;
@@ -114,6 +122,55 @@
 	border-radius:0px 0px 70px 70px;
 	background-color:#FFCC66;
 	background-image:linear-gradient(#FFBF5D,#FFDA72);
+}
+#slideshow{
+	background-color: rgb(255,255,204);
+}
+#images{
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 100% 100%;
+	grid-column-gap: 0px;
+}
+#images img{
+	width: 100%;
+	margin: 0px;
+}
+.changeSlide{
+	width: 5%;
+	position: absolute;
+	vertical-align: top;
+	overflow: hidden;
+	top: 0;
+	display: none;
+	text-align: center;
+	cursor: pointer;
+}
+.changeSlide i{
+	top: 40%;
+	position: absolute;
+	font-size: 50px;
+	line-height: 60px;
+	color: #663300;
+}
+.changeSlide:hover i{
+	font-size: 55px;
+}
+#prevSlide{
+	background-image: linear-gradient(to right, rgba(250, 150, 0, 0.5) , rgba(250, 150, 0, 0));
+	float: left;
+	left: 0;
+}
+#prevSlide i{
+	left: 40%;
+}
+#nextSlide{
+	background-image: linear-gradient(to right, rgba(250, 150, 0, 0) , rgba(250, 150, 0, 0.5));
+	right: 0;
+	float: right;
+}
+#nextSlide i{
+	right: 40%;
 }
 
 #maintable{
@@ -150,6 +207,8 @@
 	border-style:solid;
 	border-color:#663300;
 	background-color:#DD8844;
+	background-image: url("pictures/tablebackground.PNG");
+	background-size: cover;
 }
 
 a{text-decoration:none}
@@ -258,14 +317,6 @@ hr{
 	text-decoration:underline
 }
 
-#pba{
-	width:88px;
-	height:31px;
-	margin:5px;
-	border-style:solid;
-	border-color:#C79000
-}
-
 #footertd tr:last-child{
 	color:#CC3300;
 	font-size: 18px;
@@ -304,6 +355,8 @@ hr{
 }
 @media screen and (max-width:1023px){
 	.footertd2{font-size:11px;line-height: 15px;padding-left:10px}
+	.changeSlide i{font-size: 30px;line-height: 40px;}
+	.changeSlide:hover i{font-size: 35px;}
 }
 @media screen and (min-device-width:1024px) and (max-width:1023px){
 	#ttitle{font-size: 35px;letter-spacing: 1px;padding-left: 10px;}

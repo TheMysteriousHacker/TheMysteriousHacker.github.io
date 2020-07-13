@@ -313,10 +313,10 @@ hr{
 	width:80%;
 	line-height:14px;
 }
-.tdpadding a{
+#fTable a{
 	text-decoration: none;
 }
-.tdpadding a:hover{
+#fTable a:hover{
 	text-decoration:underline;
 }
 #fTable tr:last-of-type{
