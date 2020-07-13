@@ -347,7 +347,7 @@ hr{
 	header{margin-bottom: 30px;}
 	#mainheading{line-height:40px;font-size:30px;letter-spacing: 1px;margin-bottom: 10px}
 	#sideborder{padding-bottom:20px}
-	#ttitle{font-size:25px;line-height:30px;padding-left:8px;letter-spacing:0px}
+	#ttitle{font-size:25px;line-height:30px;padding-left:8px;letter-spacing:1em}
 	.imginfo{width:80%}
 	#maintable{margin-bottom:35px}
 	#tableedit{margin-top:15px;margin-bottom:15px}
