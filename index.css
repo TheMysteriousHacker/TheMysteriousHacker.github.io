@@ -176,9 +176,9 @@ header{
 #maintable{
 	max-width:1040px;
 	width:95%;
-	border-collapse:collapse;
 	white-space:normal;
 	margin:auto auto 45px auto;
+	border-collapse:collapse;
 }
 
 @font-face {
@@ -192,13 +192,13 @@ header{
 	line-height:64px;
 	text-align:left;
 	padding-left:20px;
-	border-style:solid;
-	border-width:5px;
-	border-color:#663300;
 	background-color:#BB5500;
 	color:#FFDD77;
 	margin:0px;
 	text-decoration:underline;
+	border-style:solid;
+	border-width:5px;
+	border-color:#663300;
 }
 
 .tableb{
