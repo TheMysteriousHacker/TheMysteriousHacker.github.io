@@ -77,8 +77,14 @@ bottom();
 
 function changeImgHeight(){
 	$("#images").css("height",$("#images img")[0].offsetHeight);
-	$(".changeSlide").css("height",$("header")[0].offsetHeight);
+	$(".changeSlide").css("height",$("header")[0].clientHeight);
 }
+
+window.onresize = function(){
+	bottom();
+	changeImgHeight();
+};
+
 imgArray = ['<img src="pictures/slideshow1.png">',
 			'<img src="pictures/slideshow2.png">',
 			'<img src="pictures/slideshow3.png">',
@@ -87,7 +93,7 @@ refArray = ['astronomy/geocentric/geocentric.html',
 			'astronomy/heliocentric/De revolutionibus orbium coelestium.html',
 			'dismaths/factorials_and_permutation/factorials_and_permutations.html',
 			'chemistry/medieval/phlogiston_theory.html']
-			
+
 var slideShowIndex = 1;
 var prevIndex = imgArray.length - 1;
 var nextSlideVar;
@@ -150,11 +156,6 @@ function leftSlideNow(){
 		});
 	}
 }
-
-window.onresize = function(){
-								bottom();
-								changeImgHeight();
-							};
 
 $("#sideborder").hide();
 
