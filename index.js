@@ -68,22 +68,12 @@ function colorcorrect(){
 		}}
 }
 
-var bEl = document.getElementById("bline");
-function bottom(){
-	bodyh = document.getElementById("body").offsetHeight;
-	bEl.style.top = (bodyh - 10) + "px";
-}
-bottom();
-
 function changeImgHeight(){
 	$("#images").css("height",$("#images img")[0].offsetHeight);
 	$(".changeSlide").css("height",$("header")[0].clientHeight);
 }
 
-window.onresize = function(){
-	bottom();
-	changeImgHeight();
-};
+window.onresize = changeImgHeight;
 
 imgArray = ['<img src="pictures/slideshow1.png">',
 			'<img src="pictures/slideshow2.png">',
@@ -104,7 +94,7 @@ function changeslide(){
 		$("#images").append(imgArray[slideShowIndex]);
 		$("#images").animate({
 			scrollLeft: parseInt($("#images").css("width"))
-		},5000,function(){
+		},500,function(){
 			console.log("stop");
 			$($("#images img")[0]).remove();
 			$("#images").attr("href",refArray[slideShowIndex]);
