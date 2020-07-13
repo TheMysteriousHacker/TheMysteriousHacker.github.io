@@ -293,7 +293,6 @@ hr{
 	width:96%;
 	position:inherit;
 	margin:10px auto 0px auto;
-	background-color:#FF9933;
 	text-align:left;
 	border-collapse:collapse
 }
@@ -307,6 +306,7 @@ hr{
 	font-weight: bold;
 	line-height: 22px;
 	padding-left:20px;
+	background-color:#FF9933;
 }
 
 .footertd2 a{
@@ -322,9 +322,8 @@ hr{
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: bold;
-	background-color:#FFF2CC;
+	background-color:transparent;
 	font-family:footerFont;
-	border-color:#FFF2CC
 }
 
 #bline{
