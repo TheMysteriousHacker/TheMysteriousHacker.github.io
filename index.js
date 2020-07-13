@@ -103,8 +103,9 @@ function changeslide(){
 		enableSlide = false;
 		$("#images").append(imgArray[slideShowIndex]);
 		$("#images").animate({
-			scrollLeft: parseInt($($("#images img")[0]).css("width"))
-		},500,function(){
+			scrollLeft: parseInt($("#images").css("width"))
+		},5000,function(){
+			console.log("stop");
 			$($("#images img")[0]).remove();
 			$("#images").attr("href",refArray[slideShowIndex]);
 			if (slideShowIndex == imgArray.length-1){
@@ -133,7 +134,7 @@ function leftSlideNow(){
 		enableSlide = false;
 		clearTimeout(nextSlideVar);
 		$("#images").prepend(imgArray[prevIndex]);
-		$("#images").scrollLeft(parseInt($($("#images img")[0]).css("width")));
+		$("#images").scrollLeft(parseInt($("#images").css("width")));
 		$("#images").animate({
 			scrollLeft: 0
 		},500,function(){
