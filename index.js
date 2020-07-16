@@ -41,6 +41,11 @@ function colorcorrect(){
 			change.style.borderLeftColor = '#005555';
 			change.style.backgroundColor = '#88DFDF';
 		}
+		if (subject == 'ps'){
+			document.getElementById(name).style.color = '#550055';
+			change.style.borderLeftColor = '#550055';
+			change.style.backgroundColor = '#EEAADD';
+		}
 		if (subject == 'chemistry'){
 			document.getElementById(name).style.color = '#993366';
 			change.style.borderLeftColor = '#993366';
@@ -95,7 +100,6 @@ function changeslide(){
 		$("#images").animate({
 			scrollLeft: parseInt($("#images").css("width"))
 		},500,function(){
-			console.log("stop");
 			$($("#images img")[0]).remove();
 			$("#images").attr("href",refArray[slideShowIndex]);
 			if (slideShowIndex == imgArray.length-1){
@@ -154,6 +158,48 @@ if (window.location.href.indexOf("emailSent") != -1){
 	$("#recommended").html('<b>Thank You For Your Submission</b><br/>Make sure to check you email for our reply</span>').css("text-align","center");
 }
 
+var mouseOutVar;
+var SOEl = $("#searchOptions");
+function mouseOutSearch(){
+	mouseOutVar = window.setTimeout(function(){SOEl.hide()},1500);
+}
+
+var topicName;
+var dataEl;
+var fileName;
+var rootFile;
+function optionsClicked(event){
+	topicName = $(event.target).text()
+	$("#topicSelect").html('<i class="fa fa-caret-down"></i>'+topicName);
+	$("#searchBox").attr({"disabled":false,placeholder:"Search " + topicName + " ..."});
+	$("#searchBox").val("");
+	fileName = $(event.target).attr("value");
+	rootFile = fileName.substring(0,fileName.indexOf("/")+1);
+	$.get( fileName,function(data){
+		for(dataEl of $(data)){
+			if($(dataEl).prop("tagName") == "P"){
+				$("#pageOptions").append('<div class="poptions"><a href="' + rootFile + $($(dataEl).children("a")[0]).attr("href") + '" target="_blank">' + $($(dataEl).children("a")[0]).text() + '</a></div>');
+			}
+		}
+	},"html");
+}
+
+var optionsIndex = 0;
+$(".imginfo").each(function(){
+	optionsIndex++;
+	SOEl.append('<div class="options" id="option' + optionsIndex + '" onclick="optionsClicked(event)" value="' + $($(this).parent("a")).attr("href") + '">'+ this.getAttribute("alt") + '</div>');
+});
+
+function searchClicked(){
+	if (SOEl.css("display") == "none"){
+		SOEl.show();
+	}
+	else{
+		SOEl.hide();
+	}
+	$("#pageOptions").hide();
+}
+
 function whileLoading(){
 	if ($("#forline img")[0].complete){
 		document.getElementById("continue").disabled = false;
@@ -167,7 +213,17 @@ function whileLoading(){
 }
 window.onload = function(){window.setTimeout(whileLoading,1000)};
 
+function imgHover(){
+	$("#pageOptions").hide();
+	$("#searchBox").blur();
+}
+
 var menuCounter = 0;
+var poptionIdx;
+var searchBoxEl;
+var popEl;
+var sbVal;
+var popAvailable;
 function afterLoading(){
 	document.getElementById("continue").setAttribute("disabled","disabled");
 	$("#sideborder").show();
@@ -178,7 +234,7 @@ function afterLoading(){
 			"border-top-color": "#663300",
 			"border-width":"5px"
 		});
-		$(".changeSlide").show(1000);
+		$("#searchdiv, .changeSlide").animate({opacity:1},800);
 	});
 	$("#bline").css({"border-bottom-style":"solid"});
 	$("a").attr('target',"_blank")
@@ -190,6 +246,47 @@ function afterLoading(){
 		menuCounter += 1;
 		$(this).attr({"class":"menu","id":"menu"+menuCounter});
 	})
+	$("#searchSelection").attr({onmouseleave:"mouseOutSearch()",onmouseenter:"clearTimeout(mouseOutVar)"});
+	$(document).on("click", function (event) {
+		if(event.target.id != 'searchBox'){
+			$("#pageOptions").hide();
+		}
+		if(event.target.id != 'topicSelect'){
+			SOEl.hide();
+		}
+	});
+	searchBoxEl = $("#searchBox");
+	searchBoxEl.on('focus',function(){
+		SOEl.hide();
+		if ($("#pageOptions").children().length > 0){
+			$("#pageOptions").show();
+		}
+		else{
+			$("#searchBox").attr({placeholder:"Sorry, there are no pages for this topic"});
+		}
+	});
+	searchBoxEl.on('keyup',function(){
+		popAvailable = false;
+		popEl = $(".poptions");
+		sbVal = searchBoxEl.val();
+		for(poptionIdx = 0; poptionIdx < popEl.length;poptionIdx++){
+			popElInner = $(popEl[poptionIdx]);
+			if (popElInner.text().indexOf(sbVal) == -1){
+				popElInner.hide();
+			}
+			else{
+				popElInner.show();
+				popAvailable = true;
+			}
+		}
+		if (popAvailable == false){
+			$("#pageOptions").hide();
+		}
+		else{
+			$("#pageOptions").show();
+		}
+	})
+	$(".imginfo").attr({onmouseenter:'imgHover()'});
 	changeImgHeight();
 	colorcorrect();
 	nextSlideVar = window.setTimeout(changeslide, 4000);

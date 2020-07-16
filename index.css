@@ -9,7 +9,6 @@
 	position:absolute;
 	box-sizing: border-box;
 	width:100%;
-	overflow:hidden;
 	padding:0px;
 }
 
@@ -21,6 +20,7 @@
 }
 ::-webkit-scrollbar-thumb {
 	background: rgb(180,90,00);
+	border: none;
 	border-radius:4px 
 }
 
@@ -90,17 +90,17 @@
 	border-left-color:rgb(220,150,00);
 	border-right-color:rgb(220,150,00);
 	width:100%;
+	min-width: 400px;
 	border-width:5px;
 	box-sizing: border-box;
 	padding-bottom:10px;
 }
 header{
 	background-color: rgb(255,255,204);
-	border-bottom-style:solid;
-	border-color:#663300;
-	border-width:6px;
-	margin-bottom: 50px;
 	padding-bottom: 10px;
+	border-bottom-style:solid;
+	border-color:#552200;
+	border-width:4px;
 }
 @font-face {
 	font-family: 'mainHeading';
@@ -113,6 +113,7 @@ header{
 	line-height:60px;
 	letter-spacing:4px;
 	margin:0px auto;
+	padding: 0px 10px;
 	width:94%;
 	max-width:1000px;
 	border-style:solid;
@@ -143,7 +144,7 @@ header{
 	vertical-align: top;
 	overflow: hidden;
 	top: 0;
-	display: none;
+	opacity: 0;
 	text-align: center;
 	cursor: pointer;
 }
@@ -173,6 +174,184 @@ header{
 #nextSlide i{
 	right: 40%;
 }
+#searchdiv{
+	position: relative;
+	width: 100%;
+	border-bottom-style:solid;
+	border-color:#552200;
+	border-width:4px;
+	display: grid;
+	grid-template-columns: 18% 78%;
+	justify-content: space-evenly;
+	margin-bottom: 50px;
+	background-color: rgb(150,60,00);
+	opacity: 0;
+}
+#searchSelection{
+	text-transform: capitalize;
+	user-select: none;
+}
+#topicSelect{
+	height: 24px;
+	margin: 4px 0px;
+	background-color: #BB5500;
+	background-image: linear-gradient(to top right,#C84400,#D05500,#C84400);
+	border: solid 2px #552200;
+	border-radius: 5px;
+	cursor: pointer;
+	line-height: 24px;
+	text-align: left;
+	font-family:rFont;
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-weight: bold;
+	align-items: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	padding-right: 10px;
+}
+#topicSelect i{
+	display: inline;
+	padding: 0px 15px;
+}
+
+#searchOptions{
+	top: 32px;
+	position: absolute;
+	text-align: left;
+	left: 30px;
+	border: solid 2px #441100;
+	display: none;
+}
+.options{
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 14px;
+	font-family:rFont;
+	padding: 0px 20px 0px 10px;
+	cursor: pointer;
+}
+.options:hover{
+	padding: 0px 25px 0px 5px;
+}
+#option1{
+	background-color: #FBE39B;
+	color: #663300;
+}
+#option2{
+	background-color: #CCFF99;
+	color: green;
+}
+#option3{
+	background-color: #FFEEAA;
+	color: #FF6600;
+}
+#option4{
+	background-color: #F0F0F0;
+	color: #666666;
+}
+#option5{
+	background-color: #99CCFF;
+	color: #000099;
+}
+#option6{
+	background-color: #88DFDF;
+	color: #005555;
+}
+#option7{
+	background-color: #EEAADD;
+	color: #550055;
+}
+#option8{
+	background-color: #FFEEAA;
+	color: #600000;
+}
+#option9{
+	background-color: #666666;
+	color: #88AABB;
+}
+#option10{
+	background-color: #FFBBFF;
+	color: #993366;
+}
+#option11{
+	background-color: #F4F4F4;
+	color: #535353;
+}
+#option12{
+	background-color: #FFDD99;
+	color: #FF6655;
+}
+#typingArea{
+	display: grid;
+	grid-template-columns: 100%;
+}
+#searchBox{
+	height: 22px;
+	margin: 5px 0px;
+	padding: 0px 5px;
+	border: none;
+	outline: none;
+	border: solid 2px #552200;
+	background-color: #CC5511;
+	border-radius: 3px;
+	color: #441100;
+	font-style: italic;
+	line-height: 18px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family:rFont;
+	text-overflow: ellipsis;
+}
+#searchBox::placeholder{
+	color: #441100;
+	font-style: italic;
+}
+#pageOptions{
+	top: 31px;
+	position: absolute;
+	border: solid 3px #331100;
+	border-top: none;
+	left: 22%;
+	width: 70%;
+	text-align: left;
+	background-color: #BB4411;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family:rFont;
+	display: none;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+#pageOptions::-webkit-scrollbar {
+	width: 5px;
+}
+#pageOptions::-webkit-scrollbar-track {
+	background: #441100;
+}
+#pageOptions::-webkit-scrollbar-thumb {
+	background: #AA3311;
+	border: none;
+	border-radius:4px 
+}
+.poptions{
+	padding: 1px 8px;
+	border-top: solid 1px #441100;
+	border-right: solid 3px #331100;
+	cursor: pointer;
+	z-index: 3;
+}
+.poptions:hover{
+	padding-left: 4px;
+	padding-right: 12px;
+}
+.poptions a{
+	color: #441100;
+}
+
 
 #maintable{
 	max-width:1040px;
@@ -215,7 +394,10 @@ header{
 a{text-decoration:none}
 
 .imginfo{max-width:260px;max-height:130px;margin-top:15px;margin-bottom:10px}
-.tableb a img:hover{transform:scale(1.05,1.05)}
+.tableb a img:hover{
+	transform:scale(1.05,1.05);
+	z-index: 2;
+}
 .first{display:table;text-align:center;margin: 0px auto;width:100%}
 .second{display:table-cell}
 
@@ -344,9 +526,8 @@ hr{
 	#body{background-color:#BB5500}
 	#loading{background-image:linear-gradient(to bottom right,#FF8833,#FFBB44)}
 	#continue{letter-spacing: 0px;width: 120px;}
-	header{margin-bottom: 30px;}
-	#mainheading{line-height:40px;font-size:30px;letter-spacing: 1px;margin-bottom: 10px}
 	#sideborder{padding-bottom:20px}
+	header{margin-bottom: 30px;}
 	#maintable{margin-bottom:35px;width: 90%;}
 	#ttitle{font-size:30px;line-height:38px;padding-left:8px;letter-spacing:0px}
 	.imginfo{width:85%}
@@ -355,7 +536,16 @@ hr{
 	.ttitle2{font-size:24px;padding:0px 10px;line-height:30px;font-weight:bold;color:#CF40FF}
 }
 @media screen and (max-width:1023px){
-	#mainheading{line-height:40px;font-size:30px}
+	#mainheading{line-height:40px;font-size:30px;letter-spacing: 1px;margin-bottom: 10px}
+	#topicSelect{line-height: 16px;font-size: 12px;height: 16px;}
+	#topicSelect i{padding: 0px 4px;}
+	#searchdiv{grid-template-columns: 22% 75%;}
+	#searchOptions{top:24px}
+	.options{font-size: 10px;line-height: 14px;padding: 0px 10px 0px 4px;}
+	.options:hover{padding: 0px 12px 0px 2px;}
+	#searchBox{height: 14px;line-height: 12px;font-size: 10px;}
+	#pageOptions{left: 25%;width: 72%;top:22px}
+	.poptions{line-height: 15px;font-size: 12px;}
 	.footertd2{font-size:11px;line-height: 15px;padding-left:10px}
 	.changeSlide{width: 8%;}
 	.changeSlide i{font-size: 25px;line-height: 35px;}
@@ -367,4 +557,5 @@ hr{
 	.ttitle2{font-size:25px;line-height:35px;padding:0px 8px}
 	.menu{font-size:15px;line-height: 18px;}
 	.footertd2{font-size:10px;line-height: 14px;}
+	::-webkit-scrollbar-thumb {border: solid 1px #663300;}
 }
