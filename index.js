@@ -169,7 +169,8 @@ var dataEl;
 var fileName;
 var rootFile;
 function optionsClicked(event){
-	topicName = $(event.target).text()
+	topicName = $(event.target).text();
+	$("#pageOptions").empty();
 	$("#topicSelect").html('<i class="fa fa-caret-down"></i>'+topicName);
 	$("#searchBox").attr({"disabled":false,placeholder:"Search " + topicName + " ..."});
 	$("#searchBox").val("");
