@@ -304,6 +304,7 @@ header{
 	font-weight: bold;
 	font-family:rFont;
 	text-overflow: ellipsis;
+	box-shadow: none;
 }
 #searchBox::placeholder{
 	color: #441100;
@@ -536,7 +537,7 @@ hr{
 	.ttitle2{font-size:24px;padding:0px 10px;line-height:30px;font-weight:bold;color:#CF40FF}
 }
 @media screen and (max-width:1023px){
-	#mainheading{line-height:40px;font-size:30px;letter-spacing: 1px;margin-bottom: 10px}
+	#mainheading{line-height:40px;font-size:30px;letter-spacing: 1px}
 	#topicSelect{line-height: 16px;font-size: 12px;height: 16px;}
 	#topicSelect i{padding: 0px 4px;}
 	#searchdiv{grid-template-columns: 22% 75%;}

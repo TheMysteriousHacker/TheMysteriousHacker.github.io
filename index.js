@@ -272,7 +272,7 @@ function afterLoading(){
 		sbVal = searchBoxEl.val();
 		for(poptionIdx = 0; poptionIdx < popEl.length;poptionIdx++){
 			popElInner = $(popEl[poptionIdx]);
-			if (popElInner.text().indexOf(sbVal) == -1){
+			if (popElInner.text().tolowerCase().indexOf(sbVal) == -1){
 				popElInner.hide();
 			}
 			else{
