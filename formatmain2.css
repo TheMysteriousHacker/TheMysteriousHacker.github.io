@@ -319,11 +319,6 @@ hr{
 #fTable a:hover{
 	text-decoration:underline;
 }
-#fTable tr:last-of-type{
-	line-height: 30px;
-	font-size: 0px;
-}
-
 
 /*
 -header is h1
