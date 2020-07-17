@@ -529,6 +529,7 @@ hr{
 	#continue{letter-spacing: 0px;width: 120px;}
 	#sideborder{padding-bottom:20px}
 	#searchdiv{margin-bottom: 30px;}
+	#topicSelect{letter-spacing: 0px;}
 	#maintable{margin-bottom:35px;width: 90%;}
 	#ttitle{font-size:30px;line-height:38px;padding-left:8px;letter-spacing:0px}
 	.imginfo{width:85%}
