@@ -390,7 +390,8 @@ header{
 	border-color:#663300;
 	background-color:#DD8844;
 	background-image: url("pictures/tablebackground.PNG");
-	background-size: cover;
+	background-size: 100% auto;
+	background-position: center;
 }
 
 a{text-decoration:none}
