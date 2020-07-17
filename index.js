@@ -172,7 +172,7 @@ function optionsClicked(event){
 	topicName = $(event.target).text();
 	$("#pageOptions").empty();
 	$("#topicSelect").html('<i class="fa fa-caret-down"></i>'+topicName);
-	$("#searchBox").attr({"disabled":false,placeholder:"Search " + topicName + " ..."});
+	$("#searchBox").attr({"disabled":false,placeholder:"Search " + topicName + "..."});
 	$("#searchBox").val("");
 	fileName = $(event.target).attr("value");
 	rootFile = fileName.substring(0,fileName.indexOf("/")+1);
