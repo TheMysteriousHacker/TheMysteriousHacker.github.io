@@ -547,6 +547,7 @@ hr{
 	.options{font-size: 10px;line-height: 14px;padding: 0px 10px 0px 4px;}
 	.options:hover{padding: 0px 12px 0px 2px;}
 	#searchBox{height: 14px;line-height: 12px;font-size: 10px;font-style: normal;}
+	#searchBox::placeholder{font-style: normal;}
 	#pageOptions{left: 25%;width: 72%;top:22px}
 	.poptions{line-height: 15px;font-size: 12px;}
 	.footertd2{font-size:11px;line-height: 15px;padding-left:10px}
