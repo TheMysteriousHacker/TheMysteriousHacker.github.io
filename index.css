@@ -305,6 +305,7 @@ header{
 	font-family:rFont;
 	text-overflow: ellipsis;
 	box-shadow: none;
+	-webkit-appearance: none;
 }
 #searchBox::placeholder{
 	color: #441100;
