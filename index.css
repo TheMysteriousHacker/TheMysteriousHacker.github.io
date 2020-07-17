@@ -528,7 +528,7 @@ hr{
 	#loading{background-image:linear-gradient(to bottom right,#FF8833,#FFBB44)}
 	#continue{letter-spacing: 0px;width: 120px;}
 	#sideborder{padding-bottom:20px}
-	header{margin-bottom: 30px;}
+	#searchdiv{margin-bottom: 30px;}
 	#maintable{margin-bottom:35px;width: 90%;}
 	#ttitle{font-size:30px;line-height:38px;padding-left:8px;letter-spacing:0px}
 	.imginfo{width:85%}
@@ -537,7 +537,7 @@ hr{
 	.ttitle2{font-size:24px;padding:0px 10px;line-height:30px;font-weight:bold;color:#CF40FF}
 }
 @media screen and (max-width:1023px){
-	#mainheading{line-height:40px;font-size:30px;letter-spacing: 1px}
+	#mainheading{line-height:40px;font-size:30px;letter-spacing: 1px;margin-bottom: 10px;}
 	#topicSelect{line-height: 16px;font-size: 12px;height: 16px;}
 	#topicSelect i{padding: 0px 4px;}
 	#searchdiv{grid-template-columns: 22% 75%;}
