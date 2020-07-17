@@ -223,7 +223,6 @@ var menuCounter = 0;
 var poptionIdx;
 var searchBoxEl;
 var popEl;
-var sbVal;
 var popAvailable;
 function afterLoading(){
 	document.getElementById("continue").setAttribute("disabled","disabled");
@@ -269,10 +268,9 @@ function afterLoading(){
 	searchBoxEl.on('keyup',function(){
 		popAvailable = false;
 		popEl = $(".poptions");
-		sbVal = searchBoxEl.val();
 		for(poptionIdx = 0; poptionIdx < popEl.length;poptionIdx++){
 			popElInner = $(popEl[poptionIdx]);
-			if (popElInner.text().tolowerCase().indexOf(sbVal) == -1){
+			if ((popElInner.text()).toLowerCase().indexOf(searchBoxEl.val().toLowerCase()) == -1){
 				popElInner.hide();
 			}
 			else{
