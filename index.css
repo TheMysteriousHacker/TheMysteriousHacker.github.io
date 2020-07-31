@@ -79,7 +79,6 @@
 	font-weight: bold;
 	letter-spacing: 1px;
 	min-width:100px;
-	min-height:40px
 }
 
 #sideborder{
@@ -540,7 +539,8 @@ hr{
 }
 @media screen and (max-width:1023px){
 	#forline img{max-width:100px}
-	#continue{letter-spacing: 0px;width: 110px;font-size: 15px;line-height: 15px;}
+	#continue{letter-spacing: 0px;min-width: 110px;font-size: 15px;line-height: 15px;}
+	#recommended{font-size: 10px;line-height: 14px;}
 	#mainheading{line-height:40px;font-size:30px;letter-spacing: 1px;margin-bottom: 10px;}
 	#topicSelect{line-height: 16px;font-size: 12px;height: 16px;}
 	#topicSelect i{padding: 0px 4px;}
