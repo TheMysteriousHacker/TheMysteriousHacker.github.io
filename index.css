@@ -35,7 +35,7 @@
 
 #loadcontain{
 	height:200px;
-	width:380px;
+	max-width:380px;
 	position:absolute;
 	top:40%;
 	left:50%;
@@ -530,7 +530,7 @@ hr{
 	#body{background-color:#BB5500}
 	#loading{background-image:linear-gradient(to bottom right,#FF8833,#FFBB44)}
 	#forline img{width:100px}
-	#continue{letter-spacing: 0px;width: 120px;}
+	#continue{letter-spacing: 0px;width: 110px;}
 	#sideborder{padding-bottom:20px;min-width:0px}
 	#searchdiv{margin-bottom: 30px;}
 	#topicSelect{letter-spacing: 0px;}
