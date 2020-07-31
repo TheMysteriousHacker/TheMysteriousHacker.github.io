@@ -42,7 +42,7 @@
 }
 
 #forline img{
-	width:130px;
+	max-width:130px;
 }
 
 #betweenBorder{
@@ -527,7 +527,7 @@ hr{
 @media screen and (max-device-width: 1023px){
 	#body{background-color:#BB5500}
 	#loading{background-image:linear-gradient(to bottom right,#FF8833,#FFBB44)}
-	#forline img{width:100px}
+	#forline img{max-width:100px}
 	#continue{letter-spacing: 0px;width: 110px;}
 	#sideborder{padding-bottom:20px;min-width:0px}
 	#searchdiv{margin-bottom: 30px;}
