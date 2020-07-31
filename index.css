@@ -123,6 +123,7 @@ header{
 	border-radius:0px 0px 70px 70px;
 	background-color:#FFCC66;
 	background-image:linear-gradient(#FFBF5D,#FFDA72);
+	box-sizing: border-box;
 }
 #slideshow{
 	background-color: rgb(255,255,204);
