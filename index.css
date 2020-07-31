@@ -37,8 +37,8 @@
 }
 
 #loadcontain{
-	width: 380px;
-	max-width: 98%;
+	max-width: 380px;
+	margin: 0px 10px;
 }
 
 #forline img{
