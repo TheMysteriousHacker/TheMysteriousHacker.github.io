@@ -539,7 +539,8 @@ hr{
 }
 @media screen and (max-width:1023px){
 	#forline img{max-width:100px}
-	#continue{letter-spacing: 0px;min-width: 80px;font-size: 15px;line-height: 15px;border: 1px #663300 solid;}
+	#betweenBorder{border-width: 1px;}
+	#continue{letter-spacing: 0px;min-width: 80px;font-size: 15px;line-height: 15px;border-width: 1px;}
 	#recommended{font-size: 12px;line-height: 14px;}
 	#mainheading{line-height:40px;font-size:30px;letter-spacing: 1px;margin-bottom: 10px;}
 	#topicSelect{line-height: 16px;font-size: 12px;height: 16px;}
