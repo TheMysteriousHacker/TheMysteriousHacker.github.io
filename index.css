@@ -32,9 +32,13 @@
 	border-bottom:5px solid #663300;
 	box-sizing:border-box;
 	display: grid;
-	grid-template-columns: 98%;
 	align-content: center;
 	justify-content: center;
+}
+
+#loadcontain{
+	width: 380px;
+	max-width: 98%;
 }
 
 #forline img{
