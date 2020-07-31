@@ -33,14 +33,14 @@
 	box-sizing:border-box;
 	display: grid;
 	grid-template-columns: 100%;
+	align-content: center;
+	justify-content: center;
 }
 
 #loadcontain{
 	height:200px;
 	width:98%;
 	max-width:380px;
-	align-content: center;
-	justify-content: center;
 }
 
 #forline img{
