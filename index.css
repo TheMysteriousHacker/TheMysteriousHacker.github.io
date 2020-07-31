@@ -31,21 +31,19 @@
 	background-image:linear-gradient(to bottom right,#FF9933,#FFAA33);
 	border-bottom:5px solid #663300;
 	box-sizing:border-box;
+	display: grid;
 }
 
 #loadcontain{
 	height:200px;
 	width:98%;
 	max-width:380px;
-	position:absolute;
-	top:40%;
-	left:50%;
-	margin-top:-50px;
-	margin-left:-175px
+	align-content: center;
+	justify-content: center;
 }
 
 #forline img{
-	width:130px
+	width:130px;
 }
 
 #betweenBorder{
