@@ -10,6 +10,7 @@
 	box-sizing: border-box;
 	width:100%;
 	padding:0px;
+	min-width: 400px;
 }
 
 ::-webkit-scrollbar {
@@ -87,7 +88,6 @@
 	border-left-color:rgb(220,150,00);
 	border-right-color:rgb(220,150,00);
 	width:100%;
-	min-width: 400px;
 	border-width:5px;
 	box-sizing: border-box;
 	padding-bottom:10px;
@@ -524,9 +524,9 @@ hr{
 	#sideborder{border-style:none}
 }
 @media screen and (max-device-width: 1023px){
-	#body{background-color:#BB5500}
+	#body{background-color:#BB5500;min-width:0px}
 	#loading{background-image:linear-gradient(to bottom right,#FF8833,#FFBB44)}
-	#sideborder{padding-bottom:20px;min-width:0px}
+	#sideborder{padding-bottom:20px}
 	#searchdiv{margin-bottom: 30px;}
 	#topicSelect{letter-spacing: 0px;}
 	#maintable{margin-bottom:35px;width: 90%;}
