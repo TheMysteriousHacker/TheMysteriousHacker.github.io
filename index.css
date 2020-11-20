@@ -73,13 +73,13 @@
 	font-family:buttonFont;
 	border:3px #663300 solid;
 	font-size:20px;
-	line-height:20px;
+	line-height:28px;
 	background-image:linear-gradient(to bottom right,#EEBB22,#FFCC44,#EEBB22);
 	outline:none;
 	padding:2px 6px;
 	font-weight: bold;
 	letter-spacing: 1px;
-	min-width:100px;
+	min-width:110px;
 }
 
 #sideborder{
