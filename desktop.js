@@ -76,7 +76,6 @@ function darkmode(){
 		document.cookie = "brown=yes;expires=" + d.toUTCString() + ";path=/";
 		$("p span:not(p span[data-title]), p sub").each(function(){
 			color = $(this).css('color');
-			console.log(color);
 			red = parseInt(color.slice(color.indexOf("(")+1,color.indexOf(",")));
 			green = parseInt(color.slice(color.indexOf(' ')+1,color.lastIndexOf(",")));
 			blue = parseInt(color.slice(color.lastIndexOf(' ')+1,-1));
@@ -117,20 +116,25 @@ function darkmode(){
 		$(".notSource").css({'color':fontColor,'text-shadow':'none'});
 		$("#helpBox").css({'background-color':'#C0C0C0','color':fontColor,'border':'3px ' + borderColor + ' dashed'});
 		$(".displayimg, .displayimg2").css("border","none");
-		$('[redchanged="yes"], [bluechanged="yes"]').each(function(){
+		$('p span:not(p span[data-title]), p sub').each(function(){
 			color = $(this).css('color');
 			red = parseInt(color.slice(color.indexOf("(")+1,color.indexOf(",")));
 			green = parseInt(color.slice(color.indexOf(' ')+1,color.lastIndexOf(",")));
 			blue = parseInt(color.slice(color.lastIndexOf(' ')+1,-1));
-			if ($(this).attr("redchanged") == "yes"){
-				$(this).attr("redchanged","no");
-				red -= 100;
+			if ($(this).attr("redchanged","yes")||$(this).attr("bluechanged","yes")){
+				if ($(this).attr("redchanged","yes")){
+					$(this).attr("redchanged","no");
+					red -= 100;
+				}
+				if ($(this).attr("bluechanged","yes")){
+					$(this).attr("bluechanged","no");
+					blue -= 100;
+				}
+				$(this).css('color',"rgb("+red+","+green+","+blue+")");
 			}
-			if ($(this).attr("bluechanged") == "yes"){
-				$(this).attr("bluechanged","no");
-				blue -= 100;
+			else{
+				$(this).css('color',fontColor);
 			}
-			$(this).css('color',"rgb("+red+","+green+","+blue+")");
 		})
 	}
 	$("ul").css('color',fontColor);
