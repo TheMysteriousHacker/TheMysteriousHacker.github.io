@@ -76,7 +76,6 @@ function darkmode(){
 		document.cookie = "brown=yes;expires=" + d.toUTCString() + ";path=/";
 		$("p span:not(p span[data-title]), p sub").each(function(){
 			color = $(this).css('color');
-			console.log(color);
 			red = parseInt(color.slice(color.indexOf("(")+1,color.indexOf(",")));
 			green = parseInt(color.slice(color.indexOf(' ')+1,color.lastIndexOf(",")));
 			blue = parseInt(color.slice(color.lastIndexOf(' ')+1,-1));
