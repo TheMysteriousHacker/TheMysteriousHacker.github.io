@@ -74,12 +74,6 @@ function darkmode(){
 		borderColor = '#331100';
 		fontWeight = 'normal';
 		document.cookie = "brown=yes;expires=" + d.toUTCString() + ";path=/";
-		$(".pmain").css({'color':fontColor,'text-shadow':'3px 2px 3px #331100'});
-		$(".pmain2").css({'color':fontColor,'text-shadow':'3px 2px 3px #331100'});
-		$(".subText").css({'color':fontColor,'text-shadow':'3px 2px 3px #331100'});
-		$(".notSource").css({'color':fontColor,'text-shadow':'3px 2px 3px #331100'});
-		$("#helpBox").css({'background-color':headerBackColor,'color':fontColor,'border':'6px ' + borderColor + ' ridge'});
-		$(".displayimg, .displayimg2").css("border", borderColor + " 6px solid");
 		$("p span:not(p span[data-title]), p sub").each(function(){
 			color = $(this).css('color');
 			red = parseInt(color.slice(color.indexOf("(")+1,color.indexOf(",")));
@@ -100,6 +94,12 @@ function darkmode(){
 				$(this).css('color',fontColor);
 			}
 		})
+		$(".pmain").css({'color':fontColor,'text-shadow':'3px 2px 3px #331100'});
+		$(".pmain2").css({'color':fontColor,'text-shadow':'3px 2px 3px #331100'});
+		$(".subText").css({'color':fontColor,'text-shadow':'3px 2px 3px #331100'});
+		$(".notSource").css({'color':fontColor,'text-shadow':'3px 2px 3px #331100'});
+		$("#helpBox").css({'background-color':headerBackColor,'color':fontColor,'border':'6px ' + borderColor + ' ridge'});
+		$(".displayimg, .displayimg2").css("border", borderColor + " 6px solid");
 	}
 	else{
 		darkEl.attr('class',"fa fa-times");
