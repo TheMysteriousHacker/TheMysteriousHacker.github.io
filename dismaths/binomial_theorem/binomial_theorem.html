@@ -3,31 +3,50 @@
 <!--head~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <HEAD>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-<TITLE>Why The Binomial Theorem Works</TITLE>
+<TITLE>Number Of Ways Of Arranging n Objects With k Identical Objects</TITLE>
 </HEAD>
 <!--body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <BODY id="body2">
-<header id="mainheader2" style="background-color:white"><h1>Why The Binomial Theorem Works</h1></header>
-<p class="pmain">Lets say we have four letters (X, Y, B, and C), and lets say we have four boxes:</p>
+<header id="mainheader2" style="background-color:white"><h1>Number Of Ways Of Arranging n Objects With k Identical Objects</h1></header>
+<p class="pmain">Suppose out of these four letters (A, B, C and D). Using <span style="color:purple">permutations</span>, we know that there are <span style="color:purple">P(<span style="color:#FF6600">4</span>,<span style="color:#FF9933">3</span>)</span> (= 24) ways to do it:</p></p>
 <img class="displayimg" src="1.png">
 
-<p class="pmain">If I want to put these four letters into these boxes, how many can I arrange these letters?</p>
+<p class="pmain">Now lets say I two letters repeated and two unique letters (A, A, B and C). Now how many ways are there of arranging them. If you were to treat the two repeated letters as two unique letters, the arrangements would be the same as above:</p>
 
 <img class="displayimg" src="2.png">
 
-<p class="pmain">In the first box, I can put either, X, Y, or C, so I have a total of 4 options:</p>
+<p class="pmain">There are 4! to arrange 4 letters, but since 2 letters are repeated, all the arrangements will appear 2 times:</p>
 
 <img class="displayimg" src="3.png">
 
-<p class="pmain">After I have chosen a letter for the first box, then I have a total of 3 options for the second box. For example, if I choose C for the first box, then for the second box, I can choose, X, Y, or B:</p>
+<p class="pmain">The total number of arrangement is (4!/2 =) 12. Now lets try again but with three letters repeated (A, A, A and B):</p>
 
 <img class="displayimg" src="4.png">
 
 <p class="pmain">
-    In other words, if I have four letters, then there are [4 * 3] ways I can get the first two letters: XY, CX, BY, BX, XB, YX, and so on. Now, how many ways are there to choose the first three letters? You can probably guess that there [4 * 3 * 2] ways you can choose three letters from a group of four, this is because for each of the 12 ways you choose the first two letters, there would two ways you can choose the third letter.
+    Since there are 3 letters repeated, then each arrangement will be repeated 3! times; for example consider the arrangement [B A A A], there are 3! of arranging the three A's, so the same arrangement will be repeated 3! times. The total number of unique arrangements is (4!/3! =) 4.
+</p>
+
+<p class="pmain">
+    You can probably assume that if you want to find the number of arrangements of <b>n</b> letters, where <b>k</b> letters are repeated, then you should do <b>n!/k!</b>. Now lets say that the letters are (A, A, B and B).
 </p>
 
 <img class="displayimg" src="5.png">
+
+<p class="pmain">
+    There are 4! ways to arrange 4 letters, but if each arrangment has two A's, then there are (4!/2! =) 12 ways to arrange the letters, and if B is also repeated twice, then there are (12/2! =) 6 ways to arrange the letters.
+</p>
+
+<p class="pmain">
+    Similarly if there were 6 letters, with two A's and three B's, then the number of ways to arrange the letters is (6!/(2!*3!) =) 60. 
+</p>
+
+
+<p class="pmain">
+    We can generalize this and say that the number of arrangements of <b>n</b> objects with <b>n<sub>1</sub></b> identical objects, <b>n<sub>2</sub></b> identical objects, ..., <b>n<sub>k</sub></b> identical objects:
+</p>
+
+<img class="displayimg" src="6.png">
 
 <hr>
 <script src="../../main.js"></script>
