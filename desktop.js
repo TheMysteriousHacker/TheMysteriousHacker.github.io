@@ -122,12 +122,12 @@ function darkmode(){
 			red = parseInt(color.slice(color.indexOf("(")+1,color.indexOf(",")));
 			green = parseInt(color.slice(color.indexOf(' ')+1,color.lastIndexOf(",")));
 			blue = parseInt(color.slice(color.lastIndexOf(' ')+1,-1));
-			if ($(this).attr("redchanged","yes")||$(this).attr("bluechanged","yes")){
-				if ($(this).attr("redchanged","yes")){
+			if ($(this).attr("redchanged") == "yes"||$(this).attr("bluechanged")=="yes"){
+				if ($(this).attr("redchanged")=="yes"){
 					$(this).attr("redchanged","no");
 					red -= 100;
 				}
-				if ($(this).attr("bluechanged","yes")){
+				if ($(this).attr("bluechanged")=="yes"){
 					$(this).attr("bluechanged","no");
 					blue -= 100;
 				}
