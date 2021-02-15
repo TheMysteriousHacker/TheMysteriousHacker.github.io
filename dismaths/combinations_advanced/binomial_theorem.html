@@ -9,19 +9,19 @@
 <BODY id="body2">
 <header id="mainheader2" style="background-color:white"><h1>Number Of Ways Of Arranging n Objects With k Identical Objects</h1></header>
 <p class="pmain">Suppose out of these four letters (A, B, C and D). Using <span style="color:purple">permutations</span>, we know that there are <span style="color:purple">P(<span style="color:#FF6600">4</span>,<span style="color:#FF9933">3</span>)</span> (= 24) ways to do it:</p></p>
-<img class="displayimg" src="1.png">
+<img class="displayimg" src="1c.png">
 
 <p class="pmain">Now lets say I two letters repeated and two unique letters (A, A, B and C). Now how many ways are there of arranging them. If you were to treat the two repeated letters as two unique letters, the arrangements would be the same as above:</p>
 
-<img class="displayimg" src="2.png">
+<img class="displayimg" src="2c.png">
 
 <p class="pmain">There are 4! to arrange 4 letters, but since 2 letters are repeated, all the arrangements will appear 2 times:</p>
 
-<img class="displayimg" src="3.png">
+<img class="displayimg" src="3c.png">
 
 <p class="pmain">The total number of arrangement is (4!/2 =) 12. Now lets try again but with three letters repeated (A, A, A and B):</p>
 
-<img class="displayimg" src="4.png">
+<img class="displayimg" src="4c.png">
 
 <p class="pmain">
     Since there are 3 letters repeated, then each arrangement will be repeated 3! times; for example consider the arrangement [B A A A], there are 3! of arranging the three A's, so the same arrangement will be repeated 3! times. The total number of unique arrangements is (4!/3! =) 4.
@@ -31,7 +31,7 @@
     You can probably assume that if you want to find the number of arrangements of <b>n</b> letters, where <b>k</b> letters are repeated, then you should do <b>n!/k!</b>. Now lets say that the letters are (A, A, B and B).
 </p>
 
-<img class="displayimg" src="5.png">
+<img class="displayimg" src="5c.png">
 
 <p class="pmain">
     There are 4! ways to arrange 4 letters, but if each arrangment has two A's, then there are (4!/2! =) 12 ways to arrange the letters, and if B is also repeated twice, then there are (12/2! =) 6 ways to arrange the letters. Similarly if there were 6 letters, with two A's and three B's, then the number of ways to arrange the letters is (6!/(2!*3!) =) 60. 
@@ -41,7 +41,7 @@
     We can generalize this and say that the number of arrangements of <b>n</b> objects with <b>n<sub>1</sub></b> identical objects, <b>n<sub>2</sub></b> identical objects, ..., <b>n<sub>k</sub></b> identical objects:
 </p>
 
-<img class="displayimg" src="6.png">
+<img class="displayimg" src="6c.png">
 
 <hr>
 <script src="../../main.js"></script>
