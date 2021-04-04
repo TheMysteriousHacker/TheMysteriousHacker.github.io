@@ -162,7 +162,7 @@ var checkId = document.getElementsByTagName("BODY")[0].id;
 if (checkId == "body1"){
 	$("head").append('<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/png" href="../pictures/logo.png">').ready(function(){
 		$("p").addClass("plink");
-		$(".plink a").css({"color":$("header").css("background-color")});
+		$(".plink a").css({"color":$("header").css("background-color"),"text-decoration-color":$("header").css("background-color")});
 	});
 	headerbColor = $("header").css("border-bottom-color");
 	$("h2").css({"color":headerbColor});
