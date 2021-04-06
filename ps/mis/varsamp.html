@@ -8,16 +8,31 @@
 <!--body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <BODY id="body2">
 <header id="mainheader2" style="background-color:white"><h1>Deriving An Equation For The Population Variance Using The Sample Mean, and The Sample Size</h1></header>
-<p class="pmain">For this proof, these variables will be used:</p>
+<p class="pmain">For this derivation, you have to get familiar with these variables:</p>
 <img class="displayimg" src="s1.PNG">
 <p class="pmain">For a population of size N and values X<sub>i</sub>, the population variance and the sample variance are calculated using the formula below:</p>
 <img class="displayimg" src="s2.PNG">
-<p class="pmain">In many practical situations, the true variance of a population is not known a priori and must be computed somehow. When dealing with extremely large populations, it is not possible to count every object in the population. Lets try to derive an equation for the expected value of the population variance, E[&sigma;^2], using the sample mean rather than the population mean, and using the size of the sample n rather than the population size N. The law of large numbers states that the larger the size of the sample, the more likely it is that the sample mean will be close to the population mean, so we are going to assume that E[X&#772;] &thickapprox; &mu;. Also it is commonly assumed that observations in a sample are effectively iid. Let expand our formula for population variance:</p>
+<p class="pmain">In many practical situations, the true variance of a population is not known a priori and must be computed somehow. When dealing with extremely large populations, it is not possible to count every object in the population. Lets try to derive an equation for the expected value of the population variance, E[&sigma;^2], using the sample mean rather than the population mean, and using the size of the sample n rather than the population size N. We start our derivation by the formula of variance:</p>
 <img class="displayimg" src="s3.PNG">
-<p class="pmain">We can do the same to the sample variance:</p>
+<p class="pmain">The law of large numbers states that the larger the size of the sample, the more likely it is that the sample mean will be close to the population mean, so we are going to assume that E[X&#772;] = &mu; = E[X]. Also, in statistics, it is commonly assumed that observations in a sample are effectively iid, meaning that <b>all</b> the X<sub>i</sub> variables taken from the population will have the same variance as the population (&sigma;^2). We can rewrite our variance formula like this:</p>
 <img class="displayimg" src="s4.PNG">
-<p class="pmain">Now lets subtract the population variance from the sample variance:</p>
+<p class="pmain">Since the observations are iid, then var[X&#772;] = (&sigma;^2)/n (click <a href="varMean.html">here</a> to learn why):</p>
 <img class="displayimg" src="s5.PNG">
+<p class="pmain">Our next step is to find the sum of (X<sub>i</sub>-E[X&#772;])<sup>2</sup> (they are added n times):</p>
+<img class="displayimg" src="s6.PNG">
+<p class="pmain">Since they are added n times, then X&#772; = &Sigma; X<sub>i</sub>/n:</p>
+<img class="displayimg" src="s7.PNG">
+<p class="pmain">We can use the linearity of expectation here:</p>
+<img class="displayimg" src="s8.PNG">
+<p class="pmain">We can substitute in the values we got ealier:</p>
+<img class="displayimg" src="s9.PNG">
+<p class="pmain">We can simplify this further:</p>
+<img class="displayimg" src="s10.PNG">
+<p class="pmain">Looks like we got the sum of (X<sub>i</sub>-E[X&#772;])<sup>2</sup> in very simple terms:</p>
+<img class="displayimg" src="s11.PNG">
+<p class="pmain">Lets make the population varaince the subject of this equation:</p>
+<img class="displayimg" src="s12.PNG">
+<p class="pmain">The above equation tells us that when the sum of (X<sub>i</sub>-E[X&#772;])<sup>2</sup> is divided by (n - 1), we are expected to get the population variance. This is how we get the population variance using the sample mean and the sample size. Using (n - 1) instead of n in the formula for sample variance is called <b>Bessel's correction</b>.</p>
 <hr>
 <script src="../../main.js"></script>
 </BODY>
