@@ -155,7 +155,7 @@ function leftSlideNow(){
 $("#sideborder").hide();
 
 if (window.location.href.indexOf("emailSent") != -1){
-	$("#recommended").html('<b>Thank You For Your Submission</b><br/>Make sure to check you email for our reply</span>').css("text-align","center");
+	$("#recommended").html('<b>Thank You For Your Submission</b><br/>Make sure to check your email for our reply</span>').css("text-align","center");
 }
 
 var mouseOutVar;
