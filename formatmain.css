@@ -375,4 +375,5 @@ hr{
 -All plinks must have target="_blank"
 -All elements with the style="cursor:help" should have text decoration as dashed underline
 -When writing history, sources should have disc bullet list points, if its not a source then have circle list points
+-<span data-title="extra info">underlined text</span>, there will be the #helpBox div with extra info
 */
